@@ -1,1 +1,5 @@
 2023-12-02 14:14:24,132 - main.py -> <module> - line:5 - INFO: 你好
+2023-12-02 22:02:52,565 - rendered_api.py -> requests - line:32 - INFO: 动态渲染请求成功,请求的url是: <class 'rendered_by_playwright.api.rendered_api.ResquestsData'>
+2023-12-02 22:04:17,631 - rendered_api.py -> requests - line:32 - INFO: 动态渲染请求成功,请求的url是: http://www.baidu.com
+2023-12-02 22:38:25,917 - rendered_api.py -> requests - line:32 - INFO: 动态渲染请求成功,请求的url是: http://www.baidu.com
+2023-12-02 22:38:28,460 - rendered_api.py -> requests - line:32 - INFO: 动态渲染请求成功,请求的url是: http://www.baidu.com

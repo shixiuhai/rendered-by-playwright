@@ -1,0 +1,94 @@
+2023-12-03 00:06:07,692 - rendered_api.py -> requests - line:70 - ERROR: 动态渲染请求出现错误, 错误内容是ImplementationClass.create_browser_context_page() got an unexpected keyword argument 'is_block_image'
+2023-12-03 00:15:34,571 - rendered_api.py -> requests - line:71 - INFO: 动态渲染请求成功,请求的url是: http://www.baidu.com
+2023-12-03 00:15:34,574 - rendered_api.py -> requests - line:79 - ERROR: 动态渲染请求出现错误, 错误内容是Object of type coroutine is not JSON serializable
+2023-12-03 00:16:06,372 - rendered_api.py -> requests - line:71 - INFO: 动态渲染请求成功,请求的url是: http://www.baidu.com
+2023-12-03 00:16:06,373 - rendered_api.py -> requests - line:79 - ERROR: 动态渲染请求出现错误, 错误内容是Object of type coroutine is not JSON serializable
+2023-12-03 00:17:00,746 - rendered_api.py -> requests - line:71 - INFO: 动态渲染请求成功,请求的url是: http://www.baidu.com
+2023-12-03 00:17:18,704 - rendered_api.py -> requests - line:71 - INFO: 动态渲染请求成功,请求的url是: http://www.baidu.com
+2023-12-03 00:17:20,213 - rendered_api.py -> requests - line:71 - INFO: 动态渲染请求成功,请求的url是: http://www.baidu.com
+2023-12-03 00:17:21,510 - rendered_api.py -> requests - line:71 - INFO: 动态渲染请求成功,请求的url是: http://www.baidu.com
+2023-12-03 00:17:22,752 - rendered_api.py -> requests - line:71 - INFO: 动态渲染请求成功,请求的url是: http://www.baidu.com
+2023-12-03 00:17:24,023 - rendered_api.py -> requests - line:71 - INFO: 动态渲染请求成功,请求的url是: http://www.baidu.com
+2023-12-03 00:17:25,287 - rendered_api.py -> requests - line:71 - INFO: 动态渲染请求成功,请求的url是: http://www.baidu.com
+2023-12-03 00:17:26,568 - rendered_api.py -> requests - line:71 - INFO: 动态渲染请求成功,请求的url是: http://www.baidu.com
+2023-12-03 00:17:27,845 - rendered_api.py -> requests - line:71 - INFO: 动态渲染请求成功,请求的url是: http://www.baidu.com
+2023-12-03 00:17:29,148 - rendered_api.py -> requests - line:71 - INFO: 动态渲染请求成功,请求的url是: http://www.baidu.com
+2023-12-03 00:17:30,421 - rendered_api.py -> requests - line:71 - INFO: 动态渲染请求成功,请求的url是: http://www.baidu.com
+2023-12-03 00:18:52,833 - rendered_api.py -> requests - line:71 - INFO: 动态渲染请求成功,请求的url是: https://www.baidu.com
+2023-12-03 00:20:54,940 - rendered_api.py -> requests - line:71 - INFO: 动态渲染请求成功,请求的url是: https://www.baidu.com
+2023-12-03 00:22:29,329 - implementation_class.py -> main_requests - line:230 - ERROR: 请求出现错误,出现的错误是: 'ImplementationClass' object has no attribute 'browser'
+2023-12-03 00:22:29,331 - rendered_api.py -> requests - line:71 - INFO: 动态渲染请求成功,请求的url是: https://www.baidu.com
+2023-12-03 00:23:30,635 - implementation_class.py -> main_requests - line:230 - ERROR: 请求出现错误,出现的错误是: 'ImplementationClass' object has no attribute 'browser'
+2023-12-03 00:23:30,637 - rendered_api.py -> requests - line:71 - INFO: 动态渲染请求成功,请求的url是: https://www.baidu.com
+2023-12-03 00:23:53,710 - implementation_class.py -> main_requests - line:230 - ERROR: 请求出现错误,出现的错误是: 'ImplementationClass' object has no attribute 'browser'
+2023-12-03 00:23:53,711 - rendered_api.py -> requests - line:71 - INFO: 动态渲染请求成功,请求的url是: https://www.baidu.com
+2023-12-03 00:24:50,803 - implementation_class.py -> main_requests - line:230 - ERROR: 请求出现错误,出现的错误是: ImplementationClass.add_anti_detection_js_to_context() takes 1 positional argument but 2 were given
+2023-12-03 00:24:50,805 - rendered_api.py -> requests - line:71 - INFO: 动态渲染请求成功,请求的url是: https://www.baidu.com
+2023-12-03 00:25:23,890 - implementation_class.py -> main_requests - line:230 - ERROR: 请求出现错误,出现的错误是: Target page, context or browser has been closed
+2023-12-03 00:25:23,892 - rendered_api.py -> requests - line:71 - INFO: 动态渲染请求成功,请求的url是: https://www.baidu.com
+2023-12-03 00:25:50,479 - implementation_class.py -> main_requests - line:230 - ERROR: 请求出现错误,出现的错误是: Target page, context or browser has been closed
+2023-12-03 00:25:50,481 - rendered_api.py -> requests - line:71 - INFO: 动态渲染请求成功,请求的url是: https://www.baidu.com
+2023-12-03 00:27:02,556 - implementation_class.py -> main_requests - line:230 - ERROR: 请求出现错误,出现的错误是: 'PlaywrightContextManager' object has no attribute 'chromium'
+2023-12-03 00:27:02,559 - rendered_api.py -> requests - line:71 - INFO: 动态渲染请求成功,请求的url是: https://www.baidu.com
+2023-12-03 00:30:59,084 - implementation_class.py -> main_requests - line:230 - ERROR: 请求出现错误,出现的错误是: ImplementationClass.add_anti_detection_js_to_context() takes 1 positional argument but 2 were given
+2023-12-03 00:30:59,086 - rendered_api.py -> requests - line:71 - INFO: 动态渲染请求成功,请求的url是: https://www.baidu.com
+2023-12-03 00:31:39,725 - implementation_class.py -> main_requests - line:230 - ERROR: 请求出现错误,出现的错误是: Target page, context or browser has been closed
+2023-12-03 00:32:25,764 - implementation_class.py -> main_requests - line:231 - ERROR: 请求出现错误,出现的错误是: Target page, context or browser has been closed
+2023-12-03 00:32:52,384 - rendered_api.py -> requests - line:71 - INFO: 动态渲染请求成功,请求的url是: https://www.baidu.com
+2023-12-03 00:33:24,746 - implementation_class.py -> main_requests - line:231 - ERROR: 请求出现错误,出现的错误是: Target page, context or browser has been closed
+2023-12-03 00:33:24,748 - rendered_api.py -> requests - line:71 - INFO: 动态渲染请求成功,请求的url是: https://www.baidu.com
+2023-12-03 00:33:55,840 - implementation_class.py -> main_requests - line:231 - ERROR: 请求出现错误,出现的错误是: Target page, context or browser has been closed
+2023-12-03 00:33:57,290 - rendered_api.py -> requests - line:71 - INFO: 动态渲染请求成功,请求的url是: https://www.baidu.com
+2023-12-03 00:34:30,816 - implementation_class.py -> main_requests - line:231 - ERROR: 请求出现错误,出现的错误是: Target page, context or browser has been closed
+2023-12-03 00:34:30,818 - rendered_api.py -> requests - line:71 - INFO: 动态渲染请求成功,请求的url是: https://www.baidu.com
+2023-12-03 00:38:18,275 - implementation_class.py -> main_requests - line:231 - ERROR: 请求出现错误,出现的错误是: Target page, context or browser has been closed
+2023-12-03 00:38:18,277 - rendered_api.py -> requests - line:71 - INFO: 动态渲染请求成功,请求的url是: https://www.baidu.com
+2023-12-03 00:43:45,328 - implementation_class.py -> main_requests - line:231 - ERROR: 请求出现错误,出现的错误是: Target page, context or browser has been closed
+2023-12-03 00:44:36,144 - rendered_api.py -> requests - line:71 - INFO: 动态渲染请求成功,请求的url是: https://www.baidu.com
+2023-12-03 00:45:18,229 - rendered_api.py -> requests - line:71 - INFO: 动态渲染请求成功,请求的url是: https://www.baidu.com
+2023-12-03 00:57:17,484 - implementation_class.py -> main_requests - line:236 - ERROR: 请求出现错误,出现的错误是: object PlaywrightContextManager can't be used in 'await' expression
+2023-12-03 00:57:17,486 - rendered_api.py -> requests - line:71 - INFO: 动态渲染请求成功,请求的url是: https://www.baidu.com
+2023-12-03 00:57:31,818 - implementation_class.py -> main_requests - line:236 - ERROR: 请求出现错误,出现的错误是: object PlaywrightContextManager can't be used in 'await' expression
+2023-12-03 00:57:31,819 - rendered_api.py -> requests - line:71 - INFO: 动态渲染请求成功,请求的url是: https://www.baidu.com
+2023-12-03 00:59:32,387 - rendered_api.py -> requests - line:71 - INFO: 动态渲染请求成功,请求的url是: https://www.baidu.com
+2023-12-03 00:59:58,678 - rendered_api.py -> requests - line:71 - INFO: 动态渲染请求成功,请求的url是: https://www.baidu.com
+2023-12-03 01:03:02,039 - rendered_api.py -> requests - line:71 - INFO: 动态渲染请求成功,请求的url是: https://www.baidu.com
+2023-12-03 01:04:04,897 - rendered_api.py -> requests - line:71 - INFO: 动态渲染请求成功,请求的url是: https://www.baidu.com
+2023-12-03 01:06:00,815 - rendered_api.py -> requests - line:71 - INFO: 动态渲染请求成功,请求的url是: https://www.baidu.com
+2023-12-03 01:06:23,468 - rendered_api.py -> requests - line:71 - INFO: 动态渲染请求成功,请求的url是: https://www.baidu.com
+2023-12-03 01:06:29,086 - rendered_api.py -> requests - line:71 - INFO: 动态渲染请求成功,请求的url是: https://www.baidu.com
+2023-12-03 01:06:36,989 - implementation_class.py -> main_requests - line:232 - ERROR: 请求出现错误,出现的错误是: net::ERR_NAME_NOT_RESOLVED at https://www.baidu1234.com/
+2023-12-03 01:06:37,196 - rendered_api.py -> requests - line:71 - INFO: 动态渲染请求成功,请求的url是: https://www.baidu1234.com
+2023-12-03 01:06:42,196 - implementation_class.py -> main_requests - line:232 - ERROR: 请求出现错误,出现的错误是: net::ERR_NAME_NOT_RESOLVED at https://www.baidu1234.com/
+2023-12-03 01:06:42,406 - rendered_api.py -> requests - line:71 - INFO: 动态渲染请求成功,请求的url是: https://www.baidu1234.com
+2023-12-03 01:06:50,806 - rendered_api.py -> requests - line:71 - INFO: 动态渲染请求成功,请求的url是: http://www.baidu.com
+2023-12-03 01:07:58,181 - implementation_class.py -> main_requests - line:232 - ERROR: 请求出现错误,出现的错误是: ImplementationClass.add_anti_detection_js_to_context() takes 1 positional argument but 2 were given
+2023-12-03 01:07:58,362 - rendered_api.py -> requests - line:71 - INFO: 动态渲染请求成功,请求的url是: http://www.baidu.com
+2023-12-03 01:10:02,361 - implementation_class.py -> main_requests - line:232 - ERROR: 请求出现错误,出现的错误是: ImplementationClass.add_anti_detection_js_to_context() takes 1 positional argument but 2 were given
+2023-12-03 01:10:02,547 - rendered_api.py -> requests - line:71 - INFO: 动态渲染请求成功,请求的url是: http://www.baidu.com
+2023-12-03 01:16:50,126 - implementation_class.py -> main_requests - line:231 - ERROR: 请求出现错误,出现的错误是: ImplementationClass.add_anti_detection_js_to_context() takes 1 positional argument but 2 were given
+2023-12-03 01:16:50,290 - rendered_api.py -> requests - line:71 - INFO: 动态渲染请求成功,请求的url是: http://www.baidu.com
+2023-12-03 01:17:18,991 - implementation_class.py -> main_requests - line:225 - ERROR: 请求出现错误,出现的错误是: ImplementationClass.add_anti_detection_js_to_context() takes 1 positional argument but 2 were given
+2023-12-03 01:17:19,172 - rendered_api.py -> requests - line:71 - INFO: 动态渲染请求成功,请求的url是: http://www.baidu.com
+2023-12-03 01:17:44,209 - implementation_class.py -> main_requests - line:225 - ERROR: 请求出现错误,出现的错误是: ImplementationClass.add_anti_detection_js_to_context() takes 1 positional argument but 2 were given
+2023-12-03 01:17:44,384 - rendered_api.py -> requests - line:71 - INFO: 动态渲染请求成功,请求的url是: http://www.baidu.com
+2023-12-03 01:19:25,235 - implementation_class.py -> main_requests - line:225 - ERROR: 请求出现错误,出现的错误是: ImplementationClass.add_anti_detection_js_to_context() takes 1 positional argument but 2 were given
+2023-12-03 01:19:25,398 - rendered_api.py -> requests - line:71 - INFO: 动态渲染请求成功,请求的url是: http://www.baidu.com
+2023-12-03 01:20:31,721 - implementation_class.py -> main_requests - line:225 - ERROR: 请求出现错误,出现的错误是: ImplementationClass.add_anti_detection_js_to_context() takes 1 positional argument but 2 were given
+2023-12-03 01:20:31,901 - rendered_api.py -> requests - line:71 - INFO: 动态渲染请求成功,请求的url是: http://www.baidu.com
+2023-12-03 01:20:42,593 - implementation_class.py -> main_requests - line:225 - ERROR: 请求出现错误,出现的错误是: ImplementationClass.add_anti_detection_js_to_context() takes 1 positional argument but 2 were given
+2023-12-03 01:20:42,760 - rendered_api.py -> requests - line:71 - INFO: 动态渲染请求成功,请求的url是: http://www.baidu.com
+2023-12-03 01:25:13,378 - implementation_class.py -> main_requests - line:247 - ERROR: 请求出现错误,出现的错误是: ImplementationClass.add_anti_detection_js_to_context() takes 1 positional argument but 2 were given
+2023-12-03 01:25:13,525 - rendered_api.py -> requests - line:71 - INFO: 动态渲染请求成功,请求的url是: http://www.baidu.com
+2023-12-03 01:25:45,283 - rendered_api.py -> requests - line:71 - INFO: 动态渲染请求成功,请求的url是: http://www.baidu.com
+2023-12-03 01:27:41,608 - implementation_class.py -> main_requests - line:249 - ERROR: 请求出现错误,出现的错误是: object NoneType can't be used in 'await' expression
+2023-12-03 01:27:41,803 - rendered_api.py -> requests - line:71 - INFO: 动态渲染请求成功,请求的url是: http://www.baidu.com
+2023-12-03 01:28:05,215 - rendered_api.py -> requests - line:71 - INFO: 动态渲染请求成功,请求的url是: http://www.baidu.com
+2023-12-03 01:28:26,003 - implementation_class.py -> main_requests - line:249 - ERROR: 请求出现错误,出现的错误是: Timeout 20ms exceeded.
+2023-12-03 01:28:26,250 - rendered_api.py -> requests - line:71 - INFO: 动态渲染请求成功,请求的url是: http://www.baidu.com
+2023-12-03 01:29:11,541 - rendered_api.py -> requests - line:71 - INFO: 动态渲染请求成功,请求的url是: http://www.baidu.com
+2023-12-03 01:29:22,908 - rendered_api.py -> requests - line:71 - INFO: 动态渲染请求成功,请求的url是: http://www.baidu.com
+2023-12-03 01:31:17,681 - rendered_api.py -> requests - line:71 - INFO: 动态渲染请求成功,请求的url是: https://www.taobao.com
+2023-12-03 01:31:52,610 - rendered_api.py -> requests - line:71 - INFO: 动态渲染请求成功,请求的url是: https://www.taobao.com
+2023-12-03 01:34:07,685 - rendered_api.py -> requests - line:71 - INFO: 动态渲染请求成功,请求的url是: https://item.taobao.com/item.htm?id=749746790470
+2023-12-03 01:34:22,886 - rendered_api.py -> requests - line:71 - INFO: 动态渲染请求成功,请求的url是: https://item.taobao.com/item.htm?id=749746790470
