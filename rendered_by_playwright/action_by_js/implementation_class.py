@@ -151,7 +151,7 @@ class ImplementationClass(InterfaceClass):
         if self.url:
             self.page.on('response', self.handle_page_xhr_url)
             if self.handle_xhr_path:
-                await self.page.goto(self.url, wait_until='networkidle0')
+                await self.page.goto(self.url, wait_until='networkidle')
             else:
                 await self.page.goto(self.url, wait_until='load')
             await self.page.evaluate('''async () => {
