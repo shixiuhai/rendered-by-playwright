@@ -7,8 +7,10 @@ from rendered_by_playwright.utils.log import rendered_logger
 from rendered_by_playwright.settings import HEADLESS
 import asyncio
 import re
-
-
+import platform
+os_name = platform.system()
+if os_name == "Windows":
+    HEADLESS = False
 
 class ImplementationClass(InterfaceClass):
     """_summary_

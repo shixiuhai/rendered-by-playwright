@@ -332,3 +332,148 @@ Browser logs:
 2023-12-03 15:01:07,029 - rendered_api.py -> requests - line:78 - INFO: 动态渲染请求成功,请求的url是: https://www.xiaohongshu.com/explore/654ed925000000001b00c2bc
 2023-12-03 15:41:00,341 - rendered_api.py -> requests - line:78 - INFO: 动态渲染请求成功,请求的url是: https://www.baidu.com
 2023-12-03 15:51:05,796 - rendered_api.py -> requests - line:79 - INFO: 动态渲染请求成功,请求的url是: http://www.taobao.com
+2023-12-03 18:41:58,117 - rendered_api.py -> requests - line:79 - INFO: 动态渲染请求成功,请求的url是: http://www.taobao.com
+2023-12-03 18:43:35,630 - rendered_api.py -> requests - line:79 - INFO: 动态渲染请求成功,请求的url是: http://www.taobao.com
+2023-12-03 18:43:53,019 - implementation_class.py -> main_requests - line:304 - ERROR: 请求出现错误,出现的错误是: 
+2023-12-03 18:43:53,020 - rendered_api.py -> requests - line:90 - ERROR: 动态渲染请求出现错误, 请求的url是: http://www.taobao.com, 错误内容是'NoneType' object has no attribute 'close'
+2023-12-03 18:43:54,899 - implementation_class.py -> main_requests - line:304 - ERROR: 请求出现错误,出现的错误是: 
+2023-12-03 18:43:54,901 - rendered_api.py -> requests - line:90 - ERROR: 动态渲染请求出现错误, 请求的url是: http://www.taobao.com, 错误内容是'NoneType' object has no attribute 'close'
+2023-12-03 18:43:56,157 - implementation_class.py -> main_requests - line:304 - ERROR: 请求出现错误,出现的错误是: 
+2023-12-03 18:43:56,158 - rendered_api.py -> requests - line:90 - ERROR: 动态渲染请求出现错误, 请求的url是: http://www.taobao.com, 错误内容是'NoneType' object has no attribute 'close'
+2023-12-03 18:43:57,139 - implementation_class.py -> main_requests - line:304 - ERROR: 请求出现错误,出现的错误是: 
+2023-12-03 18:43:57,140 - rendered_api.py -> requests - line:90 - ERROR: 动态渲染请求出现错误, 请求的url是: http://www.taobao.com, 错误内容是'NoneType' object has no attribute 'close'
+2023-12-03 18:43:59,660 - implementation_class.py -> main_requests - line:304 - ERROR: 请求出现错误,出现的错误是: 
+2023-12-03 18:43:59,662 - rendered_api.py -> requests - line:90 - ERROR: 动态渲染请求出现错误, 请求的url是: http://www.taobao.com, 错误内容是'NoneType' object has no attribute 'close'
+2023-12-03 18:44:06,562 - implementation_class.py -> main_requests - line:304 - ERROR: 请求出现错误,出现的错误是: 
+2023-12-03 18:44:06,563 - rendered_api.py -> requests - line:90 - ERROR: 动态渲染请求出现错误, 请求的url是: https://www.xiaohongshu.com/explore/654ed925000000001b00c2bc, 错误内容是'NoneType' object has no attribute 'close'
+2023-12-03 18:44:07,718 - implementation_class.py -> main_requests - line:304 - ERROR: 请求出现错误,出现的错误是: 
+2023-12-03 18:44:07,719 - rendered_api.py -> requests - line:90 - ERROR: 动态渲染请求出现错误, 请求的url是: https://www.xiaohongshu.com/explore/654ed925000000001b00c2bc, 错误内容是'NoneType' object has no attribute 'close'
+2023-12-03 18:44:08,579 - implementation_class.py -> main_requests - line:304 - ERROR: 请求出现错误,出现的错误是: 
+2023-12-03 18:44:08,580 - rendered_api.py -> requests - line:90 - ERROR: 动态渲染请求出现错误, 请求的url是: https://www.xiaohongshu.com/explore/654ed925000000001b00c2bc, 错误内容是'NoneType' object has no attribute 'close'
+2023-12-03 18:44:09,319 - implementation_class.py -> main_requests - line:304 - ERROR: 请求出现错误,出现的错误是: 
+2023-12-03 18:44:09,320 - rendered_api.py -> requests - line:90 - ERROR: 动态渲染请求出现错误, 请求的url是: https://www.xiaohongshu.com/explore/654ed925000000001b00c2bc, 错误内容是'NoneType' object has no attribute 'close'
+2023-12-03 18:44:09,732 - implementation_class.py -> main_requests - line:304 - ERROR: 请求出现错误,出现的错误是: 
+2023-12-03 18:44:09,732 - rendered_api.py -> requests - line:90 - ERROR: 动态渲染请求出现错误, 请求的url是: https://www.xiaohongshu.com/explore/654ed925000000001b00c2bc, 错误内容是'NoneType' object has no attribute 'close'
+2023-12-03 18:44:10,275 - implementation_class.py -> main_requests - line:304 - ERROR: 请求出现错误,出现的错误是: 
+2023-12-03 18:44:10,277 - rendered_api.py -> requests - line:90 - ERROR: 动态渲染请求出现错误, 请求的url是: https://www.xiaohongshu.com/explore/654ed925000000001b00c2bc, 错误内容是'NoneType' object has no attribute 'close'
+2023-12-03 18:44:30,986 - implementation_class.py -> main_requests - line:304 - ERROR: 请求出现错误,出现的错误是: 
+2023-12-03 18:44:30,987 - rendered_api.py -> requests - line:90 - ERROR: 动态渲染请求出现错误, 请求的url是: https://www.xiaohongshu.com/explore/654ed925000000001b00c2bc, 错误内容是'NoneType' object has no attribute 'close'
+2023-12-03 18:44:32,293 - implementation_class.py -> main_requests - line:304 - ERROR: 请求出现错误,出现的错误是: 
+2023-12-03 18:44:32,294 - rendered_api.py -> requests - line:90 - ERROR: 动态渲染请求出现错误, 请求的url是: https://www.xiaohongshu.com/explore/654ed925000000001b00c2bc, 错误内容是'NoneType' object has no attribute 'close'
+2023-12-03 18:44:39,748 - implementation_class.py -> main_requests - line:304 - ERROR: 请求出现错误,出现的错误是: 
+2023-12-03 18:44:39,748 - rendered_api.py -> requests - line:90 - ERROR: 动态渲染请求出现错误, 请求的url是: http://www.taobao.com, 错误内容是'NoneType' object has no attribute 'close'
+2023-12-03 18:44:40,724 - implementation_class.py -> main_requests - line:304 - ERROR: 请求出现错误,出现的错误是: 
+2023-12-03 18:44:40,725 - rendered_api.py -> requests - line:90 - ERROR: 动态渲染请求出现错误, 请求的url是: http://www.taobao.com, 错误内容是'NoneType' object has no attribute 'close'
+2023-12-03 18:45:10,403 - implementation_class.py -> main_requests - line:304 - ERROR: 请求出现错误,出现的错误是: 
+2023-12-03 18:45:10,404 - rendered_api.py -> requests - line:90 - ERROR: 动态渲染请求出现错误, 请求的url是: http://www.taobao.com, 错误内容是'NoneType' object has no attribute 'close'
+2023-12-03 18:45:15,533 - implementation_class.py -> main_requests - line:304 - ERROR: 请求出现错误,出现的错误是: 
+2023-12-03 18:45:15,534 - rendered_api.py -> requests - line:90 - ERROR: 动态渲染请求出现错误, 请求的url是: http://www.taobao.com, 错误内容是'NoneType' object has no attribute 'close'
+2023-12-03 18:45:16,428 - implementation_class.py -> main_requests - line:304 - ERROR: 请求出现错误,出现的错误是: 
+2023-12-03 18:45:16,429 - rendered_api.py -> requests - line:90 - ERROR: 动态渲染请求出现错误, 请求的url是: http://www.taobao.com, 错误内容是'NoneType' object has no attribute 'close'
+2023-12-03 18:45:51,071 - implementation_class.py -> main_requests - line:304 - ERROR: 请求出现错误,出现的错误是: 
+2023-12-03 18:45:51,073 - rendered_api.py -> requests - line:90 - ERROR: 动态渲染请求出现错误, 请求的url是: http://www.taobao.com, 错误内容是'NoneType' object has no attribute 'close'
+2023-12-03 18:45:52,275 - implementation_class.py -> main_requests - line:304 - ERROR: 请求出现错误,出现的错误是: 
+2023-12-03 18:45:52,276 - rendered_api.py -> requests - line:90 - ERROR: 动态渲染请求出现错误, 请求的url是: http://www.taobao.com, 错误内容是'NoneType' object has no attribute 'close'
+2023-12-03 18:45:53,392 - implementation_class.py -> main_requests - line:304 - ERROR: 请求出现错误,出现的错误是: 
+2023-12-03 18:45:53,394 - rendered_api.py -> requests - line:90 - ERROR: 动态渲染请求出现错误, 请求的url是: http://www.taobao.com, 错误内容是'NoneType' object has no attribute 'close'
+2023-12-03 18:45:54,268 - implementation_class.py -> main_requests - line:304 - ERROR: 请求出现错误,出现的错误是: 
+2023-12-03 18:45:54,270 - rendered_api.py -> requests - line:90 - ERROR: 动态渲染请求出现错误, 请求的url是: http://www.taobao.com, 错误内容是'NoneType' object has no attribute 'close'
+2023-12-03 18:45:55,118 - implementation_class.py -> main_requests - line:304 - ERROR: 请求出现错误,出现的错误是: 
+2023-12-03 18:45:55,119 - rendered_api.py -> requests - line:90 - ERROR: 动态渲染请求出现错误, 请求的url是: http://www.taobao.com, 错误内容是'NoneType' object has no attribute 'close'
+2023-12-03 18:45:55,979 - implementation_class.py -> main_requests - line:304 - ERROR: 请求出现错误,出现的错误是: 
+2023-12-03 18:45:55,981 - rendered_api.py -> requests - line:90 - ERROR: 动态渲染请求出现错误, 请求的url是: http://www.taobao.com, 错误内容是'NoneType' object has no attribute 'close'
+2023-12-03 18:45:57,144 - implementation_class.py -> main_requests - line:304 - ERROR: 请求出现错误,出现的错误是: 
+2023-12-03 18:45:57,146 - rendered_api.py -> requests - line:90 - ERROR: 动态渲染请求出现错误, 请求的url是: http://www.taobao.com, 错误内容是'NoneType' object has no attribute 'close'
+2023-12-03 18:45:58,064 - implementation_class.py -> main_requests - line:304 - ERROR: 请求出现错误,出现的错误是: 
+2023-12-03 18:45:58,065 - rendered_api.py -> requests - line:90 - ERROR: 动态渲染请求出现错误, 请求的url是: http://www.taobao.com, 错误内容是'NoneType' object has no attribute 'close'
+2023-12-03 18:46:07,267 - implementation_class.py -> main_requests - line:304 - ERROR: 请求出现错误,出现的错误是: 
+2023-12-03 18:46:07,268 - rendered_api.py -> requests - line:90 - ERROR: 动态渲染请求出现错误, 请求的url是: https://www.xiaohongshu.com/explore/654ed925000000001b00c2bc, 错误内容是'NoneType' object has no attribute 'close'
+2023-12-03 18:46:31,181 - implementation_class.py -> main_requests - line:304 - ERROR: 请求出现错误,出现的错误是: 
+2023-12-03 18:46:31,183 - rendered_api.py -> requests - line:90 - ERROR: 动态渲染请求出现错误, 请求的url是: https://www.xiaohongshu.com/explore/654ed925000000001b00c2bc, 错误内容是'NoneType' object has no attribute 'close'
+2023-12-03 18:46:32,057 - implementation_class.py -> main_requests - line:304 - ERROR: 请求出现错误,出现的错误是: 
+2023-12-03 18:46:32,058 - rendered_api.py -> requests - line:90 - ERROR: 动态渲染请求出现错误, 请求的url是: https://www.xiaohongshu.com/explore/654ed925000000001b00c2bc, 错误内容是'NoneType' object has no attribute 'close'
+2023-12-03 18:46:32,863 - implementation_class.py -> main_requests - line:304 - ERROR: 请求出现错误,出现的错误是: 
+2023-12-03 18:46:32,865 - rendered_api.py -> requests - line:90 - ERROR: 动态渲染请求出现错误, 请求的url是: https://www.xiaohongshu.com/explore/654ed925000000001b00c2bc, 错误内容是'NoneType' object has no attribute 'close'
+2023-12-03 18:46:33,427 - implementation_class.py -> main_requests - line:304 - ERROR: 请求出现错误,出现的错误是: 
+2023-12-03 18:46:33,428 - rendered_api.py -> requests - line:90 - ERROR: 动态渲染请求出现错误, 请求的url是: https://www.xiaohongshu.com/explore/654ed925000000001b00c2bc, 错误内容是'NoneType' object has no attribute 'close'
+2023-12-03 18:46:33,831 - implementation_class.py -> main_requests - line:304 - ERROR: 请求出现错误,出现的错误是: 
+2023-12-03 18:46:33,832 - rendered_api.py -> requests - line:90 - ERROR: 动态渲染请求出现错误, 请求的url是: https://www.xiaohongshu.com/explore/654ed925000000001b00c2bc, 错误内容是'NoneType' object has no attribute 'close'
+2023-12-03 18:46:34,282 - implementation_class.py -> main_requests - line:304 - ERROR: 请求出现错误,出现的错误是: 
+2023-12-03 18:46:34,283 - rendered_api.py -> requests - line:90 - ERROR: 动态渲染请求出现错误, 请求的url是: https://www.xiaohongshu.com/explore/654ed925000000001b00c2bc, 错误内容是'NoneType' object has no attribute 'close'
+2023-12-03 18:46:34,732 - implementation_class.py -> main_requests - line:304 - ERROR: 请求出现错误,出现的错误是: 
+2023-12-03 18:46:34,733 - rendered_api.py -> requests - line:90 - ERROR: 动态渲染请求出现错误, 请求的url是: https://www.xiaohongshu.com/explore/654ed925000000001b00c2bc, 错误内容是'NoneType' object has no attribute 'close'
+2023-12-03 18:46:35,158 - implementation_class.py -> main_requests - line:304 - ERROR: 请求出现错误,出现的错误是: 
+2023-12-03 18:46:35,159 - rendered_api.py -> requests - line:90 - ERROR: 动态渲染请求出现错误, 请求的url是: https://www.xiaohongshu.com/explore/654ed925000000001b00c2bc, 错误内容是'NoneType' object has no attribute 'close'
+2023-12-03 18:46:35,990 - implementation_class.py -> main_requests - line:304 - ERROR: 请求出现错误,出现的错误是: 
+2023-12-03 18:46:35,992 - rendered_api.py -> requests - line:90 - ERROR: 动态渲染请求出现错误, 请求的url是: https://www.xiaohongshu.com/explore/654ed925000000001b00c2bc, 错误内容是'NoneType' object has no attribute 'close'
+2023-12-03 18:46:36,815 - implementation_class.py -> main_requests - line:304 - ERROR: 请求出现错误,出现的错误是: 
+2023-12-03 18:46:36,816 - rendered_api.py -> requests - line:90 - ERROR: 动态渲染请求出现错误, 请求的url是: https://www.xiaohongshu.com/explore/654ed925000000001b00c2bc, 错误内容是'NoneType' object has no attribute 'close'
+2023-12-03 18:47:11,921 - implementation_class.py -> main_requests - line:304 - ERROR: 请求出现错误,出现的错误是: 
+2023-12-03 18:47:11,923 - rendered_api.py -> requests - line:90 - ERROR: 动态渲染请求出现错误, 请求的url是: https://www.xiaohongshu.com/explore/654ed925000000001b00c2bc, 错误内容是'NoneType' object has no attribute 'close'
+2023-12-03 18:47:13,116 - implementation_class.py -> main_requests - line:304 - ERROR: 请求出现错误,出现的错误是: 
+2023-12-03 18:47:13,118 - rendered_api.py -> requests - line:90 - ERROR: 动态渲染请求出现错误, 请求的url是: https://www.xiaohongshu.com/explore/654ed925000000001b00c2bc, 错误内容是'NoneType' object has no attribute 'close'
+2023-12-03 18:47:13,947 - implementation_class.py -> main_requests - line:304 - ERROR: 请求出现错误,出现的错误是: 
+2023-12-03 18:47:13,949 - rendered_api.py -> requests - line:90 - ERROR: 动态渲染请求出现错误, 请求的url是: https://www.xiaohongshu.com/explore/654ed925000000001b00c2bc, 错误内容是'NoneType' object has no attribute 'close'
+2023-12-03 18:47:14,864 - implementation_class.py -> main_requests - line:304 - ERROR: 请求出现错误,出现的错误是: 
+2023-12-03 18:47:14,865 - rendered_api.py -> requests - line:90 - ERROR: 动态渲染请求出现错误, 请求的url是: https://www.xiaohongshu.com/explore/654ed925000000001b00c2bc, 错误内容是'NoneType' object has no attribute 'close'
+2023-12-03 18:47:15,741 - implementation_class.py -> main_requests - line:304 - ERROR: 请求出现错误,出现的错误是: 
+2023-12-03 18:47:15,742 - rendered_api.py -> requests - line:90 - ERROR: 动态渲染请求出现错误, 请求的url是: https://www.xiaohongshu.com/explore/654ed925000000001b00c2bc, 错误内容是'NoneType' object has no attribute 'close'
+2023-12-03 18:47:16,548 - implementation_class.py -> main_requests - line:304 - ERROR: 请求出现错误,出现的错误是: 
+2023-12-03 18:47:16,550 - rendered_api.py -> requests - line:90 - ERROR: 动态渲染请求出现错误, 请求的url是: https://www.xiaohongshu.com/explore/654ed925000000001b00c2bc, 错误内容是'NoneType' object has no attribute 'close'
+2023-12-03 18:47:17,293 - implementation_class.py -> main_requests - line:304 - ERROR: 请求出现错误,出现的错误是: 
+2023-12-03 18:47:17,294 - rendered_api.py -> requests - line:90 - ERROR: 动态渲染请求出现错误, 请求的url是: https://www.xiaohongshu.com/explore/654ed925000000001b00c2bc, 错误内容是'NoneType' object has no attribute 'close'
+2023-12-03 18:47:25,741 - implementation_class.py -> main_requests - line:304 - ERROR: 请求出现错误,出现的错误是: 
+2023-12-03 18:47:25,743 - rendered_api.py -> requests - line:90 - ERROR: 动态渲染请求出现错误, 请求的url是: https://www.xiaohongshu.com/explore/654ed925000000001b00c2bc, 错误内容是'NoneType' object has no attribute 'close'
+2023-12-03 18:47:26,734 - implementation_class.py -> main_requests - line:304 - ERROR: 请求出现错误,出现的错误是: 
+2023-12-03 18:47:26,735 - rendered_api.py -> requests - line:90 - ERROR: 动态渲染请求出现错误, 请求的url是: https://www.xiaohongshu.com/explore/654ed925000000001b00c2bc, 错误内容是'NoneType' object has no attribute 'close'
+2023-12-03 18:47:36,435 - implementation_class.py -> main_requests - line:304 - ERROR: 请求出现错误,出现的错误是: 
+2023-12-03 18:47:36,437 - rendered_api.py -> requests - line:90 - ERROR: 动态渲染请求出现错误, 请求的url是: https://www.xiaohongshu.com/explore/654ed925000000001b00c2bc, 错误内容是'NoneType' object has no attribute 'close'
+2023-12-03 18:47:37,307 - implementation_class.py -> main_requests - line:304 - ERROR: 请求出现错误,出现的错误是: 
+2023-12-03 18:47:37,308 - rendered_api.py -> requests - line:90 - ERROR: 动态渲染请求出现错误, 请求的url是: https://www.xiaohongshu.com/explore/654ed925000000001b00c2bc, 错误内容是'NoneType' object has no attribute 'close'
+2023-12-03 18:48:00,003 - rendered_api.py -> requests - line:79 - INFO: 动态渲染请求成功,请求的url是: https://www.xiaohongshu.com/explore/654ed925000000001b00c2bc
+2023-12-03 18:48:07,168 - rendered_api.py -> requests - line:79 - INFO: 动态渲染请求成功,请求的url是: https://www.xiaohongshu.com/explore/654ed925000000001b00c2bc
+2023-12-03 18:48:18,005 - rendered_api.py -> requests - line:79 - INFO: 动态渲染请求成功,请求的url是: https://www.xiaohongshu.com/explore/654ed925000000001b00c2bc
+2023-12-03 18:48:24,517 - rendered_api.py -> requests - line:79 - INFO: 动态渲染请求成功,请求的url是: https://www.xiaohongshu.com/explore/654ed925000000001b00c2bc
+2023-12-03 18:54:52,224 - implementation_class.py -> main_requests - line:304 - ERROR: 请求出现错误,出现的错误是: Timeout 15000ms exceeded.
+2023-12-03 18:54:52,323 - rendered_api.py -> requests - line:79 - INFO: 动态渲染请求成功,请求的url是: http://www.taobao.com
+2023-12-03 18:55:03,292 - rendered_api.py -> requests - line:79 - INFO: 动态渲染请求成功,请求的url是: https://www.xiaohongshu.com/explore/654ed925000000001b00c2bc
+2023-12-03 18:55:27,735 - rendered_api.py -> requests - line:79 - INFO: 动态渲染请求成功,请求的url是: http://www.taobao.com
+2023-12-03 18:59:55,163 - rendered_api.py -> requests - line:79 - INFO: 动态渲染请求成功,请求的url是: http://www.taobao.com
+2023-12-03 19:03:33,604 - rendered_api.py -> requests - line:79 - INFO: 动态渲染请求成功,请求的url是: https://www.xiaohongshu.com/explore/654ed925000000001b00c2bc
+2023-12-03 19:03:57,178 - rendered_api.py -> requests - line:79 - INFO: 动态渲染请求成功,请求的url是: https://www.xiaohongshu.com/explore/654ed925000000001b00c2bc
+2023-12-03 19:04:08,551 - rendered_api.py -> requests - line:79 - INFO: 动态渲染请求成功,请求的url是: https://www.xiaohongshu.com/explore/654ed925000000001b00c2bc
+2023-12-03 19:05:16,975 - implementation_class.py -> main_requests - line:304 - ERROR: 请求出现错误,出现的错误是: 
+2023-12-03 19:05:16,977 - rendered_api.py -> requests - line:90 - ERROR: 动态渲染请求出现错误, 请求的url是: https://www.xiaohongshu.com/explore/654ed925000000001b00c2bc, 错误内容是'NoneType' object has no attribute 'close'
+2023-12-03 20:07:42,800 - rendered_api.py -> requests - line:79 - INFO: 动态渲染请求成功,请求的url是: https://item.taobao.com/item.htm?spm=a21bo.jianhua.201876.1.5af92a89EP5tnC&id=36903311829&scm=1007.40986.276750.0&pvid=24189f20-0708-421d-980f-730cd37cfc05
+2023-12-03 20:08:04,811 - rendered_api.py -> requests - line:79 - INFO: 动态渲染请求成功,请求的url是: https://item.taobao.com/item.htm?spm=a21bo.jianhua.201876.1.5af92a89EP5tnC&id=36903311829&scm=1007.40986.276750.0&pvid=24189f20-0708-421d-980f-730cd37cfc05
+2023-12-03 20:15:01,756 - implementation_class.py -> main_requests - line:304 - ERROR: 请求出现错误,出现的错误是: Object of type CookiesItem is not JSON serializable
+2023-12-03 20:15:01,758 - rendered_api.py -> requests - line:79 - INFO: 动态渲染请求成功,请求的url是: https://item.taobao.com/item.htm?spm=a21bo.jianhua.201876.1.5af92a89EP5tnC&id=36903311829&scm=1007.40986.276750.0&pvid=24189f20-0708-421d-980f-730cd37cfc05
+2023-12-03 20:16:14,155 - implementation_class.py -> main_requests - line:304 - ERROR: 请求出现错误,出现的错误是: Object of type CookiesItem is not JSON serializable
+2023-12-03 20:28:37,631 - implementation_class.py -> main_requests - line:316 - ERROR: 请求出现错误,出现的错误是: Object of type CookiesItem is not JSON serializable
+2023-12-03 20:28:37,633 - rendered_api.py -> requests - line:79 - INFO: 动态渲染请求成功,请求的url是: https://item.taobao.com/item.htm?spm=a21bo.jianhua.201876.1.5af92a89EP5tnC&id=36903311829&scm=1007.40986.276750.0&pvid=24189f20-0708-421d-980f-730cd37cfc05
+2023-12-03 20:28:55,761 - implementation_class.py -> main_requests - line:316 - ERROR: 请求出现错误,出现的错误是: Object of type CookiesItem is not JSON serializable
+2023-12-03 20:28:55,762 - rendered_api.py -> requests - line:79 - INFO: 动态渲染请求成功,请求的url是: https://item.taobao.com/item.htm?spm=a21bo.jianhua.201876.1.5af92a89EP5tnC&id=36903311829&scm=1007.40986.276750.0&pvid=24189f20-0708-421d-980f-730cd37cfc05
+2023-12-03 20:30:16,047 - implementation_class.py -> main_requests - line:316 - ERROR: 请求出现错误,出现的错误是: Object of type CookiesItem is not JSON serializable
+2023-12-03 20:30:16,048 - rendered_api.py -> requests - line:79 - INFO: 动态渲染请求成功,请求的url是: https://item.taobao.com/item.htm?spm=a21bo.jianhua.201876.1.5af92a89EP5tnC&id=36903311829&scm=1007.40986.276750.0&pvid=24189f20-0708-421d-980f-730cd37cfc05
+2023-12-03 20:32:53,304 - implementation_class.py -> main_requests - line:306 - ERROR: 请求出现错误,出现的错误是: 'CookiesItem' object has no attribute 'to_dict'
+2023-12-03 20:32:53,306 - rendered_api.py -> requests - line:79 - INFO: 动态渲染请求成功,请求的url是: https://item.taobao.com/item.htm?spm=a21bo.jianhua.201876.1.5af92a89EP5tnC&id=36903311829&scm=1007.40986.276750.0&pvid=24189f20-0708-421d-980f-730cd37cfc05
+2023-12-03 20:33:41,466 - implementation_class.py -> main_requests - line:306 - ERROR: 请求出现错误,出现的错误是: Cookie should have a url or a domain/path pair
+2023-12-03 20:33:41,468 - rendered_api.py -> requests - line:79 - INFO: 动态渲染请求成功,请求的url是: https://item.taobao.com/item.htm?spm=a21bo.jianhua.201876.1.5af92a89EP5tnC&id=36903311829&scm=1007.40986.276750.0&pvid=24189f20-0708-421d-980f-730cd37cfc05
+2023-12-03 20:35:07,262 - implementation_class.py -> main_requests - line:306 - ERROR: 请求出现错误,出现的错误是: Cookie should have a url or a domain/path pair
+2023-12-03 20:35:07,263 - rendered_api.py -> requests - line:79 - INFO: 动态渲染请求成功,请求的url是: https://item.taobao.com/item.htm?spm=a21bo.jianhua.201876.1.5af92a89EP5tnC&id=36903311829&scm=1007.40986.276750.0&pvid=24189f20-0708-421d-980f-730cd37cfc05
+2023-12-03 20:41:42,943 - rendered_api.py -> requests - line:79 - INFO: 动态渲染请求成功,请求的url是: https://item.taobao.com/item.htm?spm=a21bo.jianhua.201876.1.5af92a89EP5tnC&id=36903311829&scm=1007.40986.276750.0&pvid=24189f20-0708-421d-980f-730cd37cfc05
+2023-12-03 20:42:07,221 - rendered_api.py -> requests - line:79 - INFO: 动态渲染请求成功,请求的url是: https://item.taobao.com/item.htm?spm=a21bo.jianhua.201876.1.5af92a89EP5tnC&id=36903311829&scm=1007.40986.276750.0&pvid=24189f20-0708-421d-980f-730cd37cfc05
+2023-12-03 20:43:32,053 - rendered_api.py -> requests - line:79 - INFO: 动态渲染请求成功,请求的url是: https://item.taobao.com/item.htm?spm=a21bo.jianhua.201876.1.5af92a89EP5tnC&id=36903311829&scm=1007.40986.276750.0&pvid=24189f20-0708-421d-980f-730cd37cfc05
+2023-12-03 20:46:17,497 - rendered_api.py -> requests - line:79 - INFO: 动态渲染请求成功,请求的url是: https://www.baidu.com
+2023-12-03 20:52:29,629 - implementation_class.py -> main_requests - line:308 - ERROR: 请求出现错误,出现的错误是: Cookie should have a url or a domain/path pair
+2023-12-03 20:52:29,631 - rendered_api.py -> requests - line:79 - INFO: 动态渲染请求成功,请求的url是: https://item.taobao.com/item.htm?spm=a21bo.jianhua.201876.1.5af92a89EP5tnC&id=36903311829&scm=1007.40986.276750.0&pvid=24189f20-0708-421d-980f-730cd37cfc05
+2023-12-03 20:54:34,013 - implementation_class.py -> main_requests - line:308 - ERROR: 请求出现错误,出现的错误是: Cookie should have a url or a domain/path pair
+2023-12-03 20:54:34,014 - rendered_api.py -> requests - line:79 - INFO: 动态渲染请求成功,请求的url是: https://item.taobao.com/item.htm?spm=a21bo.jianhua.201876.1.5af92a89EP5tnC&id=36903311829&scm=1007.40986.276750.0&pvid=24189f20-0708-421d-980f-730cd37cfc05
+2023-12-03 21:33:42,741 - rendered_api.py -> requests - line:80 - INFO: 动态渲染请求成功,请求的url是: https://item.taobao.com/item.htm?spm=a21bo.jianhua.201876.1.5af92a89EP5tnC&id=36903311829&scm=1007.40986.276750.0&pvid=24189f20-0708-421d-980f-730cd37cfc05
+2023-12-03 22:04:36,820 - rendered_api.py -> requests - line:80 - INFO: 动态渲染请求成功,请求的url是: https://item.taobao.com/item.htm?spm=a21bo.jianhua.201876.1.5af92a89EP5tnC&id=36903311829&scm=1007.40986.276750.0&pvid=24189f20-0708-421d-980f-730cd37cfc05
+2023-12-03 22:05:02,019 - rendered_api.py -> requests - line:80 - INFO: 动态渲染请求成功,请求的url是: https://item.taobao.com/item.htm?spm=a21bo.jianhua.201876.1.5af92a89EP5tnC&id=36903311829&scm=1007.40986.276750.0&pvid=24189f20-0708-421d-980f-730cd37cfc05
+2023-12-03 22:06:04,551 - rendered_api.py -> requests - line:80 - INFO: 动态渲染请求成功,请求的url是: https://item.taobao.com/item.htm?spm=a21bo.jianhua.201876.1.5af92a89EP5tnC&id=36903311829&scm=1007.40986.276750.0&pvid=24189f20-0708-421d-980f-730cd37cfc05
+2023-12-03 22:06:28,317 - rendered_api.py -> requests - line:80 - INFO: 动态渲染请求成功,请求的url是: https://item.taobao.com/item.htm?spm=a21bo.jianhua.201876.1.5af92a89EP5tnC&id=36903311829&scm=1007.40986.276750.0&pvid=24189f20-0708-421d-980f-730cd37cfc05
+2023-12-03 22:06:39,499 - rendered_api.py -> requests - line:80 - INFO: 动态渲染请求成功,请求的url是: https://item.taobao.com/item.htm?spm=a21bo.jianhua.201876.1.5af92a89EP5tnC&id=36903311829&scm=1007.40986.276750.0&pvid=24189f20-0708-421d-980f-730cd37cfc05
+2023-12-03 22:07:54,069 - rendered_api.py -> requests - line:80 - INFO: 动态渲染请求成功,请求的url是: https://item.taobao.com/item.htm?spm=a21bo.jianhua.201876.1.5af92a89EP5tnC&id=36903311829&scm=1007.40986.276750.0&pvid=24189f20-0708-421d-980f-730cd37cfc05
+2023-12-03 22:08:38,691 - rendered_api.py -> requests - line:80 - INFO: 动态渲染请求成功,请求的url是: https://www.baidu.com
