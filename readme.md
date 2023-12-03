@@ -1,6 +1,10 @@
 ## rendered-by-playwright项目
 ### api接口文档
 * https://console-docs.apipost.cn/preview/73fc7c6d53b316e0/6bf3e4ff47acf074
+### 项目docker部署到ubuntu
+* linux系统安装docker
+* git拉取项目 
+* 运行 cd rendered_by_playwright && bash build.sh
 ### 1. 项目初衷
 * 实现一个类似splash动态渲染通过api接口实现
 * 实现一个类似selenium将逐步操作方法通过接口请求实现
