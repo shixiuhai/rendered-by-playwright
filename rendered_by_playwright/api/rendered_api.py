@@ -19,7 +19,8 @@ class ResquestsData(BaseModel):
     is_block_image:Optional[bool] = False # 是否屏蔽图片加载
     is_block_video:Optional[bool] = False # 是否屏蔽视频加载
     is_block_audio:Optional[bool] = False # 是否屏蔽音频加载
-    js_script:Optional[str] = None # 执行的js脚本
+    js_script_after_page:Optional[str] = None # 访问页面后执行的js脚本
+    js_script_before_page:Optional[str] = None # 访问页面前执行的js脚本
     user_agent:Optional[str] = None # 设置请求设备
     timeout:Optional[int] = 10 # 请求页面的超时时间
     max_retry_times:Optional[int] = 1 # 请求失败重试次数
@@ -47,7 +48,8 @@ async def requests(data: ResquestsData):
         is_block_image = data.is_block_image
         is_block_video = data.is_block_video
         is_block_audio = data.is_block_audio
-        js_script = data.js_script
+        js_script_after_page = data.js_script_after_page
+        js_script_before_page = data.js_script_before_page
         user_agent = data.user_agent
         timeout = data.timeout
         max_retry_times = data.timeout
@@ -65,7 +67,8 @@ async def requests(data: ResquestsData):
                                                     is_block_image=is_block_image,
                                                     is_block_video=is_block_video, 
                                                     is_block_audio=is_block_audio,
-                                                    js_script=js_script, 
+                                                    js_script_after_page=js_script_after_page,
+                                                    js_script_before_page=js_script_before_page,
                                                     user_agent=user_agent, 
                                                     timeout=timeout,
                                                     max_retry_times=max_retry_times, 

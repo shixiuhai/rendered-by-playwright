@@ -119,16 +119,27 @@ class ImplementationClass(InterfaceClass):
                 cookies_list.append({"name":item.name, "value":item.value, "domain":item.domain, "path":item.path})
             await self.context.add_cookies(cookies_list)
     
-    async def execute_js_to_page(self)->None:
+    async def execute_js_to_page_after(self)->None:
         """_summary_
-        将js注入到页面执行
+        将js注入到访问url后
         Args:
             page (object): _description_
         Returns:
             None: _description_
         """
-        if self.js_script:
-            await self.page.evaluate(self.js_script)
+        if self.js_script_after_page:
+            await self.page.evaluate(self.js_script_after_page)
+            
+    async def execute_js_to_page_before(self)->None:
+        """_summary_
+        将js注入到访问url前
+        Args:
+            page (object): _description_
+        Returns:
+            None: _description_
+        """
+        if self.js_script_before_page:
+            await self.page.evaluate(self.js_script_before_page)
             
     async def goto_page(self)->None:
         """_summary_
@@ -254,7 +265,7 @@ class ImplementationClass(InterfaceClass):
         await self.browser.close() # 关闭浏览器对象 
         
     async def main_requests(self, url:str, cookies:list, is_block_image:bool, is_block_video:bool,
-                            is_block_audio:bool,  js_script:str, user_agent:str, timeout:int, 
+                            is_block_audio:bool,  js_script_after_page:str, js_script_before_page:str, user_agent:str, timeout:int, 
                             max_retry_times:int, browser_type:str, return_type:str, view_window_width:int,
                             view_window_height:int, proxy:str, handle_xhr_path:str):
         """_summary_
@@ -279,7 +290,8 @@ class ImplementationClass(InterfaceClass):
         self.is_block_image = is_block_image
         self.is_block_video = is_block_video
         self.is_block_audio = is_block_audio
-        self.js_script = js_script
+        self.js_script_after_page = js_script_after_page
+        self.js_script_before_page = js_script_before_page
         self.user_agent = user_agent
         self.timeout = timeout
         self.max_retry_times = max_retry_times
@@ -296,7 +308,9 @@ class ImplementationClass(InterfaceClass):
             await self.block_context_video() # 屏蔽上下文视频加载
             await self.block_context_audio() # 屏蔽上下文音频加载
             await self.add_cookies_to_context() # 给上下文对象添加cookies
+            await self.execute_js_to_page_before() # 在访问页面前执行js
             await self.goto_page() # 请求页面url
+            await self.execute_js_to_page_after() # 在访问页面后执行js
             if self.return_type == ReturnTypeEnum.TEXT.value:
                 result = await self.get_page_text()
             if self.return_type == ReturnTypeEnum.SCREENSHOT.value:

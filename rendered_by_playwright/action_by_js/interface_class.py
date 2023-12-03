@@ -19,7 +19,8 @@ class InterfaceClass(metaclass=ABCMeta):
         self.is_block_video = False
         self.is_block_audio = False
         self.user_agent = None
-        self.js_script = None
+        self.js_script_after_page = None
+        self.js_script_before_page = None
         self.timeout = 20
         self.max_retry_times = 1
         self.browser_type = BrowserTypeEnum.CHROMIUM.value
@@ -77,15 +78,27 @@ class InterfaceClass(metaclass=ABCMeta):
         pass
     
     @abstractclassmethod
-    async def execute_js_to_page(self)->None:
+    async def execute_js_to_page_after(self)->None:
         """_summary_
-        将js注入到页面执行
+        将js注入到访问url后
         Args:
             page (object): _description_
         Returns:
             None: _description_
         """
         pass
+    
+    @abstractclassmethod
+    async def execute_js_to_page_before(self)->None:
+        """_summary_
+        将js注入到访问url前
+        Args:
+            page (object): _description_
+        Returns:
+            None: _description_
+        """
+        if self.js_script_before_page:
+            await self.page.evaluate(self.js_script_before_page)
     
     @abstractclassmethod
     async def goto_page(self)->None:

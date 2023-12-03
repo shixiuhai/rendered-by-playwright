@@ -477,3 +477,22 @@ Browser logs:
 2023-12-03 22:06:39,499 - rendered_api.py -> requests - line:80 - INFO: 动态渲染请求成功,请求的url是: https://item.taobao.com/item.htm?spm=a21bo.jianhua.201876.1.5af92a89EP5tnC&id=36903311829&scm=1007.40986.276750.0&pvid=24189f20-0708-421d-980f-730cd37cfc05
 2023-12-03 22:07:54,069 - rendered_api.py -> requests - line:80 - INFO: 动态渲染请求成功,请求的url是: https://item.taobao.com/item.htm?spm=a21bo.jianhua.201876.1.5af92a89EP5tnC&id=36903311829&scm=1007.40986.276750.0&pvid=24189f20-0708-421d-980f-730cd37cfc05
 2023-12-03 22:08:38,691 - rendered_api.py -> requests - line:80 - INFO: 动态渲染请求成功,请求的url是: https://www.baidu.com
+2023-12-03 22:10:34,448 - rendered_api.py -> requests - line:80 - INFO: 动态渲染请求成功,请求的url是: https://item.taobao.com/item.htm?spm=a21bo.jianhua.201876.1.5af92a89EP5tnC&id=36903311829&scm=1007.40986.276750.0&pvid=24189f20-0708-421d-980f-730cd37cfc05
+2023-12-03 22:40:02,799 - rendered_api.py -> requests - line:80 - INFO: 动态渲染请求成功,请求的url是: https://item.taobao.com/item.htm?spm=a21bo.jianhua.201876.1.5af92a89EP5tnC&id=36903311829&scm=1007.40986.276750.0&pvid=24189f20-0708-421d-980f-730cd37cfc05
+2023-12-03 22:44:04,064 - implementation_class.py -> main_requests - line:310 - ERROR: 请求出现错误,出现的错误是: Target page, context or browser has been closed
+2023-12-03 22:44:04,080 - rendered_api.py -> requests - line:80 - INFO: 动态渲染请求成功,请求的url是: https://item.taobao.com/item.htm?spm=a21bo.jianhua.201876.1.5af92a89EP5tnC&id=36903311829&scm=1007.40986.276750.0&pvid=24189f20-0708-421d-980f-730cd37cfc05
+2023-12-03 22:44:49,834 - implementation_class.py -> main_requests - line:310 - ERROR: 请求出现错误,出现的错误是: Target page, context or browser has been closed
+2023-12-03 22:44:49,847 - rendered_api.py -> requests - line:80 - INFO: 动态渲染请求成功,请求的url是: https://item.taobao.com/item.htm?spm=a21bo.jianhua.201876.1.5af92a89EP5tnC&id=36903311829&scm=1007.40986.276750.0&pvid=24189f20-0708-421d-980f-730cd37cfc05
+2023-12-03 22:45:00,938 - implementation_class.py -> main_requests - line:310 - ERROR: 请求出现错误,出现的错误是: Target page, context or browser has been closed
+2023-12-03 22:45:00,951 - rendered_api.py -> requests - line:80 - INFO: 动态渲染请求成功,请求的url是: https://item.taobao.com/item.htm?spm=a21bo.jianhua.201876.1.5af92a89EP5tnC&id=36903311829&scm=1007.40986.276750.0&pvid=24189f20-0708-421d-980f-730cd37cfc05
+2023-12-03 22:45:20,375 - rendered_api.py -> requests - line:80 - INFO: 动态渲染请求成功,请求的url是: https://www.baidu.com
+2023-12-03 22:45:32,594 - implementation_class.py -> main_requests - line:310 - ERROR: 请求出现错误,出现的错误是: Target page, context or browser has been closed
+2023-12-03 22:45:32,598 - rendered_api.py -> requests - line:80 - INFO: 动态渲染请求成功,请求的url是: https://item.taobao.com/item.htm?spm=a21bo.jianhua.201876.1.5af92a89EP5tnC&id=36903311829&scm=1007.40986.276750.0&pvid=24189f20-0708-421d-980f-730cd37cfc05
+2023-12-03 22:45:48,963 - implementation_class.py -> main_requests - line:310 - ERROR: 请求出现错误,出现的错误是: Target page, context or browser has been closed
+2023-12-03 22:45:48,989 - rendered_api.py -> requests - line:80 - INFO: 动态渲染请求成功,请求的url是: https://item.taobao.com/item.htm?spm=a21bo.jianhua.201876.1.5af92a89EP5tnC&id=36903311829&scm=1007.40986.276750.0&pvid=24189f20-0708-421d-980f-730cd37cfc05
+2023-12-03 22:46:14,824 - implementation_class.py -> main_requests - line:310 - ERROR: 请求出现错误,出现的错误是: Target page, context or browser has been closed
+2023-12-03 22:46:14,840 - rendered_api.py -> requests - line:80 - INFO: 动态渲染请求成功,请求的url是: https://item.taobao.com/item.htm?spm=a21bo.jianhua.201876.1.5af92a89EP5tnC&id=36903311829&scm=1007.40986.276750.0&pvid=24189f20-0708-421d-980f-730cd37cfc05
+2023-12-03 22:46:59,239 - implementation_class.py -> main_requests - line:310 - ERROR: 请求出现错误,出现的错误是: Execution context was destroyed, most likely because of a navigation.
+2023-12-03 22:46:59,241 - rendered_api.py -> requests - line:80 - INFO: 动态渲染请求成功,请求的url是: https://item.taobao.com/item.htm?spm=a21bo.jianhua.201876.1.5af92a89EP5tnC&id=36903311829&scm=1007.40986.276750.0&pvid=24189f20-0708-421d-980f-730cd37cfc05
+2023-12-03 22:52:44,858 - rendered_api.py -> requests - line:80 - INFO: 动态渲染请求成功,请求的url是: https://item.taobao.com/item.htm?spm=a21bo.jianhua.201876.1.5af92a89EP5tnC&id=36903311829&scm=1007.40986.276750.0&pvid=24189f20-0708-421d-980f-730cd37cfc05
+2023-12-03 23:08:52,409 - rendered_api.py -> requests - line:80 - INFO: 动态渲染请求成功,请求的url是: https://item.taobao.com/item.htm?spm=a21bo.jianhua.201876.1.5af92a89EP5tnC&id=36903311829&scm=1007.40986.276750.0&pvid=24189f20-0708-421d-980f-730cd37cfc05
