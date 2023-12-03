@@ -1,11 +1,12 @@
 from fastapi import FastAPI, HTTPException
-from fastapi.responses import JSONResponse
+from fastapi.responses import JSONResponse,StreamingResponse
 from pydantic import BaseModel
 from typing import List, Optional
 from rendered_by_playwright.action_by_js.implementation_class import ImplementationClass
 from rendered_by_playwright.utils.log import rendered_logger
 from rendered_by_playwright.enum_class.browser_type_enum import BrowserTypeEnum
 from rendered_by_playwright.enum_class.return_type_enum import ReturnTypeEnum
+from io import BytesIO
 class CookiesItem(BaseModel):
     name:str # cookie名称
     value:str # cookie值
@@ -76,10 +77,14 @@ async def requests(data: ResquestsData):
         
         
         rendered_logger.info(f"动态渲染请求成功,请求的url是: {data.url}")
-        return {
-                    "code": 200,
-                    "text":result
-        }
+        if return_type == ReturnTypeEnum.TEXT.value or return_type == ReturnTypeEnum.HANDLEXHR.value:
+            return JSONResponse(
+            content={
+                        "code": 200,
+                        "text":result
+            })
+        if return_type == ReturnTypeEnum.SCREENSHOT.value:
+            return StreamingResponse(BytesIO(result), media_type="image/png")
     
     except Exception as error:
         rendered_logger.error(f"动态渲染请求出现错误, 请求的url是: {data.url}, 错误内容是{error}")

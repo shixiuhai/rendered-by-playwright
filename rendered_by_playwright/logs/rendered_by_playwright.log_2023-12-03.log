@@ -330,3 +330,5 @@ Browser logs:
 2023-12-03 14:59:46,841 - rendered_api.py -> requests - line:78 - INFO: 动态渲染请求成功,请求的url是: https://www.xiaohongshu.com/explore/654ed925000000001b00c2bc
 2023-12-03 15:01:07,027 - implementation_class.py -> main_requests - line:304 - ERROR: 请求出现错误,出现的错误是: Execution context was destroyed, most likely because of a navigation.
 2023-12-03 15:01:07,029 - rendered_api.py -> requests - line:78 - INFO: 动态渲染请求成功,请求的url是: https://www.xiaohongshu.com/explore/654ed925000000001b00c2bc
+2023-12-03 15:41:00,341 - rendered_api.py -> requests - line:78 - INFO: 动态渲染请求成功,请求的url是: https://www.baidu.com
+2023-12-03 15:51:05,796 - rendered_api.py -> requests - line:79 - INFO: 动态渲染请求成功,请求的url是: http://www.taobao.com
