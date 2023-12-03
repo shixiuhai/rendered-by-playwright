@@ -26,6 +26,10 @@ class InterfaceClass(metaclass=ABCMeta):
         self.return_type = ReturnTypeEnum.TEXT.value
         self.view_window_width = 1920
         self.view_window_height = 1080
+        self.proxy = None
+        self.handle_xhr_path = None
+        self.handle_page_xhr_text_list = []
+        self.is_handle_page_xhr_text_list_sucess = False
         
     
     @abstractclassmethod
@@ -90,6 +94,14 @@ class InterfaceClass(metaclass=ABCMeta):
         Args:
             page (object): _description_
             url (str): _description_
+        """
+        
+    @abstractclassmethod
+    async def handle_page_xhr_url(self)->None:
+        """_summary_
+        勾取xhr请求
+        Args:
+            page (object): _description_
         """
     
     @abstractclassmethod

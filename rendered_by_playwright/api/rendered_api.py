@@ -19,12 +19,14 @@ class ResquestsData(BaseModel):
     is_block_audio:Optional[bool] = False # 是否屏蔽音频加载
     js_script:Optional[str] = None # 执行的js脚本
     user_agent:Optional[str] = None # 设置请求设备
-    timeout:Optional[int] = 20 # 请求页面的超时时间
+    timeout:Optional[int] = 10 # 请求页面的超时时间
     max_retry_times:Optional[int] = 1 # 请求失败重试次数
     browser_type:Optional[str] = BrowserTypeEnum.CHROMIUM.value # 浏览器类型
     return_type:Optional[str] = ReturnTypeEnum.TEXT.value # 请求返回类型
     view_window_width:Optional[int] = 1920 # 默认开启浏览器的窗口宽
     view_window_height:Optional[int] = 1080 # 默认开启浏览器的窗口高
+    proxy:Optional[str] = None # 浏览器代理
+    handle_xhr_path:Optional[str] = None # 筛选动态页面加载xhr接口返回数据
     
     
     
@@ -51,6 +53,9 @@ async def requests(data: ResquestsData):
         return_type = data.return_type
         view_window_width = data.view_window_width
         view_window_height = data.view_window_height
+        proxy = data.proxy
+        handle_xhr_path = data.handle_xhr_path
+        
         
         implementation_class = ImplementationClass()
         
@@ -65,18 +70,22 @@ async def requests(data: ResquestsData):
                                                     browser_type=browser_type,
                                                     return_type=return_type, 
                                                     view_window_width=view_window_width, 
-                                                    view_window_height=view_window_height)
+                                                    view_window_height=view_window_height,
+                                                    proxy=proxy,
+                                                    handle_xhr_path=handle_xhr_path)
         
         
         rendered_logger.info(f"动态渲染请求成功,请求的url是: {data.url}")
-        return JSONResponse(
-            content={
-                        "code": 200,
-                        "text":result
-                    }
-        )
+        return {
+                    "code": 200,
+                    "text":result
+        }
+    
     except Exception as error:
-        rendered_logger.error(f"动态渲染请求出现错误, 错误内容是{error}")
+        rendered_logger.error(f"动态渲染请求出现错误, 请求的url是: {data.url}, 错误内容是{error}")
+        return {
+            "code":500
+        }
         
    
 # if __name__ == "__main__":

@@ -92,3 +92,241 @@
 2023-12-03 01:31:52,610 - rendered_api.py -> requests - line:71 - INFO: 动态渲染请求成功,请求的url是: https://www.taobao.com
 2023-12-03 01:34:07,685 - rendered_api.py -> requests - line:71 - INFO: 动态渲染请求成功,请求的url是: https://item.taobao.com/item.htm?id=749746790470
 2023-12-03 01:34:22,886 - rendered_api.py -> requests - line:71 - INFO: 动态渲染请求成功,请求的url是: https://item.taobao.com/item.htm?id=749746790470
+2023-12-03 01:37:17,240 - rendered_api.py -> requests - line:71 - INFO: 动态渲染请求成功,请求的url是: https://item.taobao.com/item.htm?id=749746790470
+2023-12-03 01:41:11,576 - rendered_api.py -> requests - line:71 - INFO: 动态渲染请求成功,请求的url是: https://item.taobao.com/item.htm?id=749746790470
+2023-12-03 01:41:33,397 - rendered_api.py -> requests - line:71 - INFO: 动态渲染请求成功,请求的url是: https://item.taobao.com/item.htm?id=749746790470
+2023-12-03 01:42:23,410 - rendered_api.py -> requests - line:71 - INFO: 动态渲染请求成功,请求的url是: https://item.taobao.com/item.htm?id=749746790470
+2023-12-03 01:42:39,292 - rendered_api.py -> requests - line:71 - INFO: 动态渲染请求成功,请求的url是: https://item.taobao.com/item.htm?id=749746790470
+2023-12-03 01:43:16,265 - rendered_api.py -> requests - line:71 - INFO: 动态渲染请求成功,请求的url是: https://item.taobao.com/item.htm?id=749746790470
+2023-12-03 01:45:24,379 - rendered_api.py -> requests - line:71 - INFO: 动态渲染请求成功,请求的url是: https://item.taobao.com/item.htm?id=749746790470
+2023-12-03 01:46:02,142 - rendered_api.py -> requests - line:71 - INFO: 动态渲染请求成功,请求的url是: https://item.taobao.com/item.htm?id=749746790470
+2023-12-03 10:22:44,766 - rendered_api.py -> requests - line:71 - INFO: 动态渲染请求成功,请求的url是: https://item.taobao.com/item.htm?id=749746790470
+2023-12-03 10:23:21,665 - rendered_api.py -> requests - line:71 - INFO: 动态渲染请求成功,请求的url是: https://item.taobao.com/item.htm?id=749746790470
+2023-12-03 10:23:46,917 - rendered_api.py -> requests - line:71 - INFO: 动态渲染请求成功,请求的url是: https://item.taobao.com/item.htm?id=749746790470
+2023-12-03 10:24:55,088 - rendered_api.py -> requests - line:71 - INFO: 动态渲染请求成功,请求的url是: https://item.taobao.com/item.htm?id=749746790470
+2023-12-03 10:26:23,172 - rendered_api.py -> requests - line:71 - INFO: 动态渲染请求成功,请求的url是: https://item.taobao.com/item.htm?id=749746790470
+2023-12-03 10:26:23,174 - rendered_api.py -> requests - line:79 - ERROR: 动态渲染请求出现错误, 错误内容是Object of type bytes is not JSON serializable
+2023-12-03 10:27:48,079 - rendered_api.py -> requests - line:71 - INFO: 动态渲染请求成功,请求的url是: https://item.taobao.com/item.htm?id=749746790470
+2023-12-03 10:28:37,623 - rendered_api.py -> requests - line:71 - INFO: 动态渲染请求成功,请求的url是: https://item.taobao.com/item.htm?id=749746790470
+2023-12-03 10:31:32,199 - rendered_api.py -> requests - line:71 - INFO: 动态渲染请求成功,请求的url是: https://ucc.alicdn.com/images/user-upload-01/0360a32d973d4144841f93acd679a449.png
+2023-12-03 10:31:32,201 - rendered_api.py -> requests - line:79 - ERROR: 动态渲染请求出现错误, 错误内容是Object of type bytes is not JSON serializable
+2023-12-03 10:32:24,378 - rendered_api.py -> requests - line:71 - INFO: 动态渲染请求成功,请求的url是: https://ucc.alicdn.com/images/user-upload-01/0360a32d973d4144841f93acd679a449.png
+2023-12-03 10:32:24,393 - rendered_api.py -> requests - line:80 - ERROR: 动态渲染请求出现错误, 请求的url是: https://ucc.alicdn.com/images/user-upload-01/0360a32d973d4144841f93acd679a449.png, 错误内容是Object of type bytes is not JSON serializable
+2023-12-03 10:33:17,459 - rendered_api.py -> requests - line:71 - INFO: 动态渲染请求成功,请求的url是: https://ucc.alicdn.com/images/user-upload-01/0360a32d973d4144841f93acd679a449.png
+2023-12-03 10:33:17,462 - rendered_api.py -> requests - line:81 - ERROR: 动态渲染请求出现错误, 请求的url是: https://ucc.alicdn.com/images/user-upload-01/0360a32d973d4144841f93acd679a449.png, 错误内容是Object of type bytes is not JSON serializable
+2023-12-03 10:33:50,152 - rendered_api.py -> requests - line:71 - INFO: 动态渲染请求成功,请求的url是: https://ucc.alicdn.com/images/user-upload-01/0360a32d973d4144841f93acd679a449.png
+2023-12-03 10:33:50,154 - rendered_api.py -> requests - line:81 - ERROR: 动态渲染请求出现错误, 请求的url是: https://ucc.alicdn.com/images/user-upload-01/0360a32d973d4144841f93acd679a449.png, 错误内容是a bytes-like object is required, not 'str'
+2023-12-03 10:36:23,774 - rendered_api.py -> requests - line:71 - INFO: 动态渲染请求成功,请求的url是: https://ucc.alicdn.com/images/user-upload-01/0360a32d973d4144841f93acd679a449.png
+2023-12-03 10:36:23,777 - rendered_api.py -> requests - line:81 - ERROR: 动态渲染请求出现错误, 请求的url是: https://ucc.alicdn.com/images/user-upload-01/0360a32d973d4144841f93acd679a449.png, 错误内容是Object of type bytes is not JSON serializable
+2023-12-03 10:52:43,880 - rendered_api.py -> requests - line:71 - INFO: 动态渲染请求成功,请求的url是: https://ucc.alicdn.com/images/user-upload-01/0360a32d973d4144841f93acd679a449.png
+2023-12-03 10:52:43,885 - rendered_api.py -> requests - line:81 - ERROR: 动态渲染请求出现错误, 请求的url是: https://ucc.alicdn.com/images/user-upload-01/0360a32d973d4144841f93acd679a449.png, 错误内容是Object of type bytes is not JSON serializable
+2023-12-03 10:56:29,972 - implementation_class.py -> main_requests - line:250 - ERROR: 请求出现错误,出现的错误是: BrowserType.launch() got an unexpected keyword argument 'viewport'
+2023-12-03 10:56:29,974 - rendered_api.py -> requests - line:71 - INFO: 动态渲染请求成功,请求的url是: https://ucc.alicdn.com/images/user-upload-01/0360a32d973d4144841f93acd679a449.png
+2023-12-03 10:56:29,976 - rendered_api.py -> requests - line:81 - ERROR: 动态渲染请求出现错误, 请求的url是: https://ucc.alicdn.com/images/user-upload-01/0360a32d973d4144841f93acd679a449.png, 错误内容是a bytes-like object is required, not 'NoneType'
+2023-12-03 10:56:57,709 - implementation_class.py -> main_requests - line:250 - ERROR: 请求出现错误,出现的错误是: BrowserType.launch() got an unexpected keyword argument 'device'
+2023-12-03 10:56:57,711 - rendered_api.py -> requests - line:71 - INFO: 动态渲染请求成功,请求的url是: https://ucc.alicdn.com/images/user-upload-01/0360a32d973d4144841f93acd679a449.png
+2023-12-03 10:56:57,712 - rendered_api.py -> requests - line:81 - ERROR: 动态渲染请求出现错误, 请求的url是: https://ucc.alicdn.com/images/user-upload-01/0360a32d973d4144841f93acd679a449.png, 错误内容是a bytes-like object is required, not 'NoneType'
+2023-12-03 10:57:35,067 - implementation_class.py -> main_requests - line:250 - ERROR: 请求出现错误,出现的错误是: Target page, context or browser has been closed
+Browser logs:
+
+<launching> C:\Users\15256\AppData\Local\ms-playwright\chromium-1091\chrome-win\chrome.exe --no-sandbox --disable-gpu
+<launched> pid=19868
+[pid=19868][err] [1203/105714.070:ERROR:registration_protocol_win.cc(135)] TransactNamedPipe: �ܵ��ѽ����� (0x6D)
+[pid=19868][err] [19868:16996:1203/105714.210:ERROR:policy_logger.cc(156)] :components\enterprise\browser\controller\chrome_browser_cloud_management_controller.cc(161) Cloud management controller initialization aborted as CBCM is not enabled. Please use the `--enable-chrome-browser-cloud-management` command line flag to enable it if you are not using the official Google Chrome build.
+2023-12-03 10:57:35,070 - rendered_api.py -> requests - line:71 - INFO: 动态渲染请求成功,请求的url是: https://ucc.alicdn.com/images/user-upload-01/0360a32d973d4144841f93acd679a449.png
+2023-12-03 10:57:35,072 - rendered_api.py -> requests - line:81 - ERROR: 动态渲染请求出现错误, 请求的url是: https://ucc.alicdn.com/images/user-upload-01/0360a32d973d4144841f93acd679a449.png, 错误内容是a bytes-like object is required, not 'NoneType'
+2023-12-03 10:58:13,137 - implementation_class.py -> main_requests - line:250 - ERROR: 请求出现错误,出现的错误是: Target page, context or browser has been closed
+Browser logs:
+
+<launching> C:\Users\15256\AppData\Local\ms-playwright\chromium-1091\chrome-win\chrome.exe --disable-gpu
+<launched> pid=16512
+[pid=16512][err] [16512:19308:1203/105802.963:ERROR:policy_logger.cc(156)] :components\enterprise\browser\controller\chrome_browser_cloud_management_controller.cc(161) Cloud management controller initialization aborted as CBCM is not enabled. Please use the `--enable-chrome-browser-cloud-management` command line flag to enable it if you are not using the official Google Chrome build.
+2023-12-03 10:58:13,140 - rendered_api.py -> requests - line:71 - INFO: 动态渲染请求成功,请求的url是: https://ucc.alicdn.com/images/user-upload-01/0360a32d973d4144841f93acd679a449.png
+2023-12-03 10:58:13,141 - rendered_api.py -> requests - line:81 - ERROR: 动态渲染请求出现错误, 请求的url是: https://ucc.alicdn.com/images/user-upload-01/0360a32d973d4144841f93acd679a449.png, 错误内容是a bytes-like object is required, not 'NoneType'
+2023-12-03 10:58:37,484 - rendered_api.py -> requests - line:71 - INFO: 动态渲染请求成功,请求的url是: https://ucc.alicdn.com/images/user-upload-01/0360a32d973d4144841f93acd679a449.png
+2023-12-03 10:58:37,487 - rendered_api.py -> requests - line:81 - ERROR: 动态渲染请求出现错误, 请求的url是: https://ucc.alicdn.com/images/user-upload-01/0360a32d973d4144841f93acd679a449.png, 错误内容是Object of type bytes is not JSON serializable
+2023-12-03 10:58:58,229 - rendered_api.py -> requests - line:71 - INFO: 动态渲染请求成功,请求的url是: https://ucc.alicdn.com/images/user-upload-01/0360a32d973d4144841f93acd679a449.png
+2023-12-03 10:58:58,233 - rendered_api.py -> requests - line:81 - ERROR: 动态渲染请求出现错误, 请求的url是: https://ucc.alicdn.com/images/user-upload-01/0360a32d973d4144841f93acd679a449.png, 错误内容是Object of type bytes is not JSON serializable
+2023-12-03 10:59:53,302 - rendered_api.py -> requests - line:71 - INFO: 动态渲染请求成功,请求的url是: https://ucc.alicdn.com/images/user-upload-01/0360a32d973d4144841f93acd679a449.png
+2023-12-03 10:59:53,309 - rendered_api.py -> requests - line:81 - ERROR: 动态渲染请求出现错误, 请求的url是: https://ucc.alicdn.com/images/user-upload-01/0360a32d973d4144841f93acd679a449.png, 错误内容是Object of type bytes is not JSON serializable
+2023-12-03 11:00:07,801 - implementation_class.py -> main_requests - line:250 - ERROR: 请求出现错误,出现的错误是: Protocol error (Page.navigate): Cannot navigate to invalid URL
+2023-12-03 11:00:07,802 - rendered_api.py -> requests - line:71 - INFO: 动态渲染请求成功,请求的url是: www.google.com
+2023-12-03 11:00:07,803 - rendered_api.py -> requests - line:81 - ERROR: 动态渲染请求出现错误, 请求的url是: www.google.com, 错误内容是a bytes-like object is required, not 'NoneType'
+2023-12-03 11:00:31,794 - rendered_api.py -> requests - line:71 - INFO: 动态渲染请求成功,请求的url是: http://www.google.com
+2023-12-03 11:00:31,796 - rendered_api.py -> requests - line:81 - ERROR: 动态渲染请求出现错误, 请求的url是: http://www.google.com, 错误内容是Object of type bytes is not JSON serializable
+2023-12-03 11:05:15,855 - rendered_api.py -> requests - line:75 - INFO: 动态渲染请求成功,请求的url是: http://www.google.com
+2023-12-03 11:05:15,859 - rendered_api.py -> requests - line:85 - ERROR: 动态渲染请求出现错误, 请求的url是: http://www.google.com, 错误内容是Object of type bytes is not JSON serializable
+2023-12-03 11:05:55,424 - implementation_class.py -> main_requests - line:253 - ERROR: 请求出现错误,出现的错误是: Target page, context or browser has been closed
+2023-12-03 11:05:55,430 - rendered_api.py -> requests - line:75 - INFO: 动态渲染请求成功,请求的url是: http://www.google.com
+2023-12-03 11:05:55,432 - rendered_api.py -> requests - line:85 - ERROR: 动态渲染请求出现错误, 请求的url是: http://www.google.com, 错误内容是a bytes-like object is required, not 'NoneType'
+2023-12-03 11:06:13,634 - rendered_api.py -> requests - line:75 - INFO: 动态渲染请求成功,请求的url是: http://www.google.com
+2023-12-03 11:06:13,637 - rendered_api.py -> requests - line:85 - ERROR: 动态渲染请求出现错误, 请求的url是: http://www.google.com, 错误内容是Object of type bytes is not JSON serializable
+2023-12-03 11:06:28,882 - implementation_class.py -> main_requests - line:253 - ERROR: 请求出现错误,出现的错误是: Target page, context or browser has been closed
+2023-12-03 11:06:28,886 - rendered_api.py -> requests - line:75 - INFO: 动态渲染请求成功,请求的url是: http://www.google.com
+2023-12-03 11:06:28,888 - rendered_api.py -> requests - line:85 - ERROR: 动态渲染请求出现错误, 请求的url是: http://www.google.com, 错误内容是a bytes-like object is required, not 'NoneType'
+2023-12-03 11:08:14,064 - implementation_class.py -> main_requests - line:255 - ERROR: 请求出现错误,出现的错误是: Target page, context or browser has been closed
+2023-12-03 11:08:14,067 - rendered_api.py -> requests - line:75 - INFO: 动态渲染请求成功,请求的url是: http://www.google.com
+2023-12-03 11:08:14,068 - rendered_api.py -> requests - line:85 - ERROR: 动态渲染请求出现错误, 请求的url是: http://www.google.com, 错误内容是a bytes-like object is required, not 'NoneType'
+2023-12-03 11:08:38,290 - rendered_api.py -> requests - line:75 - INFO: 动态渲染请求成功,请求的url是: http://www.google.com
+2023-12-03 11:08:38,292 - rendered_api.py -> requests - line:85 - ERROR: 动态渲染请求出现错误, 请求的url是: http://www.google.com, 错误内容是Object of type bytes is not JSON serializable
+2023-12-03 11:08:51,653 - implementation_class.py -> main_requests - line:255 - ERROR: 请求出现错误,出现的错误是: Target page, context or browser has been closed
+2023-12-03 11:08:51,655 - rendered_api.py -> requests - line:75 - INFO: 动态渲染请求成功,请求的url是: http://www.google.com
+2023-12-03 11:08:51,657 - rendered_api.py -> requests - line:85 - ERROR: 动态渲染请求出现错误, 请求的url是: http://www.google.com, 错误内容是a bytes-like object is required, not 'NoneType'
+2023-12-03 11:09:14,144 - rendered_api.py -> requests - line:75 - INFO: 动态渲染请求成功,请求的url是: http://www.google.com
+2023-12-03 11:09:14,146 - rendered_api.py -> requests - line:85 - ERROR: 动态渲染请求出现错误, 请求的url是: http://www.google.com, 错误内容是a bytes-like object is required, not 'str'
+2023-12-03 11:09:38,226 - rendered_api.py -> requests - line:75 - INFO: 动态渲染请求成功,请求的url是: http://www.google.com
+2023-12-03 11:09:38,227 - rendered_api.py -> requests - line:85 - ERROR: 动态渲染请求出现错误, 请求的url是: http://www.google.com, 错误内容是a bytes-like object is required, not 'str'
+2023-12-03 11:10:21,642 - rendered_api.py -> requests - line:75 - INFO: 动态渲染请求成功,请求的url是: http://www.google.com
+2023-12-03 11:11:58,169 - implementation_class.py -> main_requests - line:255 - ERROR: 请求出现错误,出现的错误是: Target page, context or browser has been closed
+2023-12-03 11:11:58,171 - rendered_api.py -> requests - line:75 - INFO: 动态渲染请求成功,请求的url是: http://www.google.com
+2023-12-03 11:12:10,606 - implementation_class.py -> main_requests - line:255 - ERROR: 请求出现错误,出现的错误是: Timeout 1000ms exceeded.
+2023-12-03 11:12:10,607 - rendered_api.py -> requests - line:75 - INFO: 动态渲染请求成功,请求的url是: http://www.google.com
+2023-12-03 11:12:15,074 - implementation_class.py -> main_requests - line:255 - ERROR: 请求出现错误,出现的错误是: Timeout 1000ms exceeded.
+2023-12-03 11:12:15,075 - rendered_api.py -> requests - line:75 - INFO: 动态渲染请求成功,请求的url是: http://www.google.com
+2023-12-03 11:12:36,678 - implementation_class.py -> main_requests - line:255 - ERROR: 请求出现错误,出现的错误是: Target page, context or browser has been closed
+2023-12-03 11:12:36,685 - rendered_api.py -> requests - line:75 - INFO: 动态渲染请求成功,请求的url是: http://www.google.com
+2023-12-03 11:13:05,672 - rendered_api.py -> requests - line:75 - INFO: 动态渲染请求成功,请求的url是: http://www.google.com
+2023-12-03 11:13:31,914 - implementation_class.py -> main_requests - line:255 - ERROR: 请求出现错误,出现的错误是: Timeout 1000ms exceeded.
+2023-12-03 11:13:31,915 - rendered_api.py -> requests - line:75 - INFO: 动态渲染请求成功,请求的url是: http://www.google.com
+2023-12-03 11:13:54,000 - implementation_class.py -> main_requests - line:255 - ERROR: 请求出现错误,出现的错误是: Target page, context or browser has been closed
+2023-12-03 11:13:54,001 - rendered_api.py -> requests - line:75 - INFO: 动态渲染请求成功,请求的url是: http://www.google.com
+2023-12-03 11:14:13,065 - rendered_api.py -> requests - line:75 - INFO: 动态渲染请求成功,请求的url是: http://www.google.com
+2023-12-03 11:14:43,679 - implementation_class.py -> main_requests - line:253 - ERROR: 请求出现错误,出现的错误是: Timeout 1000ms exceeded.
+2023-12-03 11:14:43,682 - rendered_api.py -> requests - line:75 - INFO: 动态渲染请求成功,请求的url是: http://www.google.com
+2023-12-03 11:15:06,837 - implementation_class.py -> main_requests - line:253 - ERROR: 请求出现错误,出现的错误是: Timeout 1000ms exceeded.
+2023-12-03 11:15:06,839 - rendered_api.py -> requests - line:75 - INFO: 动态渲染请求成功,请求的url是: http://www.google.com
+2023-12-03 11:16:15,521 - implementation_class.py -> main_requests - line:253 - ERROR: 请求出现错误,出现的错误是: Timeout 1000ms exceeded.
+2023-12-03 11:16:15,522 - rendered_api.py -> requests - line:75 - INFO: 动态渲染请求成功,请求的url是: http://www.google.com
+2023-12-03 11:16:48,777 - rendered_api.py -> requests - line:75 - INFO: 动态渲染请求成功,请求的url是: http://www.google.com
+2023-12-03 11:29:43,652 - implementation_class.py -> main_requests - line:265 - ERROR: 请求出现错误,出现的错误是: object NoneType can't be used in 'await' expression
+2023-12-03 11:29:43,654 - rendered_api.py -> requests - line:78 - INFO: 动态渲染请求成功,请求的url是: http://www.google.com
+2023-12-03 11:30:23,750 - rendered_api.py -> requests - line:78 - INFO: 动态渲染请求成功,请求的url是: http://www.google.com
+2023-12-03 11:31:00,016 - implementation_class.py -> main_requests - line:265 - ERROR: 请求出现错误,出现的错误是: net::ERR_HTTP_RESPONSE_CODE_FAILURE at http://www.taobao.com.com/
+2023-12-03 11:31:00,038 - rendered_api.py -> requests - line:78 - INFO: 动态渲染请求成功,请求的url是: http://www.taobao.com.com
+2023-12-03 11:31:19,555 - rendered_api.py -> requests - line:78 - INFO: 动态渲染请求成功,请求的url是: http://www.taobao.com
+2023-12-03 11:32:10,488 - rendered_api.py -> requests - line:78 - INFO: 动态渲染请求成功,请求的url是: http://www.taobao.com
+2023-12-03 11:33:47,970 - implementation_class.py -> main_requests - line:265 - ERROR: 请求出现错误,出现的错误是: Timeout 10000ms exceeded.
+2023-12-03 11:33:47,973 - rendered_api.py -> requests - line:78 - INFO: 动态渲染请求成功,请求的url是: http://www.taobao.com
+2023-12-03 11:34:39,373 - rendered_api.py -> requests - line:78 - INFO: 动态渲染请求成功,请求的url是: http://www.taobao.com
+2023-12-03 11:35:09,944 - rendered_api.py -> requests - line:78 - INFO: 动态渲染请求成功,请求的url是: http://www.taobao.com
+2023-12-03 11:37:02,947 - rendered_api.py -> requests - line:78 - INFO: 动态渲染请求成功,请求的url是: http://www.taobao.com
+2023-12-03 11:37:25,429 - rendered_api.py -> requests - line:78 - INFO: 动态渲染请求成功,请求的url是: http://www.taobao.com
+2023-12-03 11:37:44,005 - rendered_api.py -> requests - line:78 - INFO: 动态渲染请求成功,请求的url是: http://www.taobao.com
+2023-12-03 11:39:05,510 - rendered_api.py -> requests - line:78 - INFO: 动态渲染请求成功,请求的url是: http://www.taobao.com
+2023-12-03 11:39:44,300 - rendered_api.py -> requests - line:78 - INFO: 动态渲染请求成功,请求的url是: http://www.taobao.com
+2023-12-03 11:40:14,078 - rendered_api.py -> requests - line:78 - INFO: 动态渲染请求成功,请求的url是: http://www.taobao.com
+2023-12-03 11:45:24,822 - rendered_api.py -> requests - line:78 - INFO: 动态渲染请求成功,请求的url是: http://www.taobao.com
+2023-12-03 11:45:53,964 - rendered_api.py -> requests - line:78 - INFO: 动态渲染请求成功,请求的url是: http://www.taobao.com
+2023-12-03 11:46:46,935 - rendered_api.py -> requests - line:78 - INFO: 动态渲染请求成功,请求的url是: http://www.taobao.com
+2023-12-03 11:48:28,907 - rendered_api.py -> requests - line:78 - INFO: 动态渲染请求成功,请求的url是: http://www.taobao.com
+2023-12-03 11:49:16,247 - rendered_api.py -> requests - line:78 - INFO: 动态渲染请求成功,请求的url是: http://www.taobao.com
+2023-12-03 11:52:33,762 - rendered_api.py -> requests - line:78 - INFO: 动态渲染请求成功,请求的url是: http://www.taobao.com
+2023-12-03 11:53:31,540 - rendered_api.py -> requests - line:78 - INFO: 动态渲染请求成功,请求的url是: http://www.taobao.com
+2023-12-03 11:55:38,790 - rendered_api.py -> requests - line:78 - INFO: 动态渲染请求成功,请求的url是: http://www.taobao.com
+2023-12-03 11:58:42,907 - rendered_api.py -> requests - line:78 - INFO: 动态渲染请求成功,请求的url是: http://www.taobao.com
+2023-12-03 12:00:18,512 - rendered_api.py -> requests - line:78 - INFO: 动态渲染请求成功,请求的url是: http://www.taobao.com
+2023-12-03 12:01:53,674 - rendered_api.py -> requests - line:78 - INFO: 动态渲染请求成功,请求的url是: http://www.taobao.com
+2023-12-03 12:02:29,293 - rendered_api.py -> requests - line:78 - INFO: 动态渲染请求成功,请求的url是: http://www.taobao.com
+2023-12-03 12:05:00,714 - rendered_api.py -> requests - line:78 - INFO: 动态渲染请求成功,请求的url是: http://www.taobao.com
+2023-12-03 12:06:28,682 - rendered_api.py -> requests - line:78 - INFO: 动态渲染请求成功,请求的url是: http://www.taobao.com
+2023-12-03 12:10:41,423 - rendered_api.py -> requests - line:78 - INFO: 动态渲染请求成功,请求的url是: http://www.taobao.com
+2023-12-03 12:22:40,476 - implementation_class.py -> main_requests - line:273 - ERROR: 请求出现错误,出现的错误是: 'Page' object has no attribute 'wait_for'
+2023-12-03 12:22:40,478 - rendered_api.py -> requests - line:78 - INFO: 动态渲染请求成功,请求的url是: http://www.taobao.com
+2023-12-03 12:40:51,302 - implementation_class.py -> main_requests - line:273 - ERROR: 请求出现错误,出现的错误是: object NoneType can't be used in 'await' expression
+2023-12-03 12:40:51,304 - rendered_api.py -> requests - line:78 - INFO: 动态渲染请求成功,请求的url是: http://www.taobao.com
+2023-12-03 12:41:41,803 - rendered_api.py -> requests - line:78 - INFO: 动态渲染请求成功,请求的url是: http://www.taobao.com
+2023-12-03 12:43:25,384 - rendered_api.py -> requests - line:78 - INFO: 动态渲染请求成功,请求的url是: http://www.taobao.com
+2023-12-03 12:48:37,695 - rendered_api.py -> requests - line:78 - INFO: 动态渲染请求成功,请求的url是: http://www.taobao.com
+2023-12-03 12:48:53,314 - implementation_class.py -> main_requests - line:273 - ERROR: 请求出现错误,出现的错误是: Timeout 10000ms exceeded.
+2023-12-03 12:48:53,315 - rendered_api.py -> requests - line:78 - INFO: 动态渲染请求成功,请求的url是: http://www.taobao.com
+2023-12-03 12:49:10,652 - implementation_class.py -> main_requests - line:273 - ERROR: 请求出现错误,出现的错误是: Timeout 10000ms exceeded.
+2023-12-03 12:49:10,655 - rendered_api.py -> requests - line:78 - INFO: 动态渲染请求成功,请求的url是: http://www.taobao.com
+2023-12-03 12:49:33,455 - rendered_api.py -> requests - line:78 - INFO: 动态渲染请求成功,请求的url是: http://www.taobao.com
+2023-12-03 12:49:40,850 - rendered_api.py -> requests - line:78 - INFO: 动态渲染请求成功,请求的url是: http://www.taobao.com
+2023-12-03 12:51:14,660 - rendered_api.py -> requests - line:78 - INFO: 动态渲染请求成功,请求的url是: http://www.taobao.com
+2023-12-03 12:53:31,604 - rendered_api.py -> requests - line:78 - INFO: 动态渲染请求成功,请求的url是: http://www.taobao.com
+2023-12-03 12:55:47,695 - rendered_api.py -> requests - line:78 - INFO: 动态渲染请求成功,请求的url是: http://www.taobao.com
+2023-12-03 12:56:26,909 - rendered_api.py -> requests - line:78 - INFO: 动态渲染请求成功,请求的url是: http://www.taobao.com
+2023-12-03 12:57:23,298 - rendered_api.py -> requests - line:78 - INFO: 动态渲染请求成功,请求的url是: http://www.taobao.com
+2023-12-03 12:59:29,346 - rendered_api.py -> requests - line:78 - INFO: 动态渲染请求成功,请求的url是: http://www.taobao.com
+2023-12-03 13:03:23,346 - implementation_class.py -> main_requests - line:295 - ERROR: 请求出现错误,出现的错误是: Timeout 15000ms exceeded.
+2023-12-03 13:03:23,352 - rendered_api.py -> requests - line:78 - INFO: 动态渲染请求成功,请求的url是: http://www.taobao.com
+2023-12-03 13:03:46,584 - rendered_api.py -> requests - line:78 - INFO: 动态渲染请求成功,请求的url是: http://www.taobao.com
+2023-12-03 13:05:17,710 - implementation_class.py -> main_requests - line:296 - ERROR: 请求出现错误,出现的错误是: Timeout 15000ms exceeded.
+2023-12-03 13:05:17,717 - rendered_api.py -> requests - line:78 - INFO: 动态渲染请求成功,请求的url是: http://www.taobao.com
+2023-12-03 13:05:26,687 - rendered_api.py -> requests - line:78 - INFO: 动态渲染请求成功,请求的url是: http://www.taobao.com
+2023-12-03 13:05:50,553 - implementation_class.py -> main_requests - line:296 - ERROR: 请求出现错误,出现的错误是: Timeout 15000ms exceeded.
+2023-12-03 13:05:50,557 - rendered_api.py -> requests - line:78 - INFO: 动态渲染请求成功,请求的url是: http://www.taobao.com
+2023-12-03 13:06:38,061 - rendered_api.py -> requests - line:78 - INFO: 动态渲染请求成功,请求的url是: http://www.taobao.com
+2023-12-03 13:06:56,640 - implementation_class.py -> main_requests - line:296 - ERROR: 请求出现错误,出现的错误是: Timeout 15000ms exceeded.
+2023-12-03 13:06:56,773 - rendered_api.py -> requests - line:78 - INFO: 动态渲染请求成功,请求的url是: http://www.taobao.com
+2023-12-03 13:07:05,835 - rendered_api.py -> requests - line:78 - INFO: 动态渲染请求成功,请求的url是: http://www.taobao.com
+2023-12-03 13:07:14,760 - rendered_api.py -> requests - line:78 - INFO: 动态渲染请求成功,请求的url是: http://www.taobao.com
+2023-12-03 13:07:33,389 - rendered_api.py -> requests - line:78 - INFO: 动态渲染请求成功,请求的url是: http://www.taobao.com
+2023-12-03 13:08:52,637 - implementation_class.py -> main_requests - line:296 - ERROR: 请求出现错误,出现的错误是: Timeout 15000ms exceeded.
+2023-12-03 13:08:52,786 - rendered_api.py -> requests - line:78 - INFO: 动态渲染请求成功,请求的url是: http://www.taobao.com
+2023-12-03 13:09:11,438 - implementation_class.py -> main_requests - line:296 - ERROR: 请求出现错误,出现的错误是: Timeout 15000ms exceeded.
+2023-12-03 13:09:11,565 - rendered_api.py -> requests - line:78 - INFO: 动态渲染请求成功,请求的url是: http://www.taobao.com
+2023-12-03 13:09:32,948 - implementation_class.py -> main_requests - line:296 - ERROR: 请求出现错误,出现的错误是: Timeout 15000ms exceeded.
+2023-12-03 13:09:33,078 - rendered_api.py -> requests - line:78 - INFO: 动态渲染请求成功,请求的url是: http://www.taobao.com
+2023-12-03 13:10:01,493 - rendered_api.py -> requests - line:78 - INFO: 动态渲染请求成功,请求的url是: http://www.taobao.com
+2023-12-03 13:10:37,291 - implementation_class.py -> main_requests - line:296 - ERROR: 请求出现错误,出现的错误是: Timeout 20000ms exceeded.
+2023-12-03 13:10:37,397 - rendered_api.py -> requests - line:78 - INFO: 动态渲染请求成功,请求的url是: http://www.taobao.com
+2023-12-03 13:11:02,843 - implementation_class.py -> main_requests - line:296 - ERROR: 请求出现错误,出现的错误是: Timeout 20000ms exceeded.
+2023-12-03 13:11:02,950 - rendered_api.py -> requests - line:78 - INFO: 动态渲染请求成功,请求的url是: http://www.taobao.com
+2023-12-03 13:11:27,912 - implementation_class.py -> main_requests - line:296 - ERROR: 请求出现错误,出现的错误是: Timeout 20000ms exceeded.
+2023-12-03 13:11:28,031 - rendered_api.py -> requests - line:78 - INFO: 动态渲染请求成功,请求的url是: http://www.taobao.com
+2023-12-03 13:12:17,227 - implementation_class.py -> main_requests - line:296 - ERROR: 请求出现错误,出现的错误是: Timeout 25000ms exceeded.
+2023-12-03 13:12:17,355 - rendered_api.py -> requests - line:78 - INFO: 动态渲染请求成功,请求的url是: http://www.taobao.com
+2023-12-03 13:13:06,230 - implementation_class.py -> main_requests - line:296 - ERROR: 请求出现错误,出现的错误是: Timeout 25000ms exceeded.
+2023-12-03 13:13:06,337 - rendered_api.py -> requests - line:78 - INFO: 动态渲染请求成功,请求的url是: http://www.taobao.com
+2023-12-03 13:13:31,392 - rendered_api.py -> requests - line:78 - INFO: 动态渲染请求成功,请求的url是: http://www.taobao.com
+2023-12-03 13:13:40,961 - rendered_api.py -> requests - line:78 - INFO: 动态渲染请求成功,请求的url是: http://www.taobao.com
+2023-12-03 13:21:53,591 - rendered_api.py -> requests - line:78 - INFO: 动态渲染请求成功,请求的url是: https://www.xiaohongshu.com/explore/654ed925000000001b00c2bc
+2023-12-03 13:23:05,056 - rendered_api.py -> requests - line:78 - INFO: 动态渲染请求成功,请求的url是: https://www.xiaohongshu.com/explore/654ed925000000001b00c2bc
+2023-12-03 13:23:22,718 - rendered_api.py -> requests - line:78 - INFO: 动态渲染请求成功,请求的url是: https://www.xiaohongshu.com/explore/654ed925000000001b00c2bc
+2023-12-03 13:25:44,192 - rendered_api.py -> requests - line:78 - INFO: 动态渲染请求成功,请求的url是: https://www.xiaohongshu.com/explore/654ed925000000001b00c2bc
+2023-12-03 13:25:57,353 - rendered_api.py -> requests - line:78 - INFO: 动态渲染请求成功,请求的url是: https://www.xiaohongshu.com/explore/654ed925000000001b00c2bc
+2023-12-03 13:27:27,244 - rendered_api.py -> requests - line:78 - INFO: 动态渲染请求成功,请求的url是: https://www.xiaohongshu.com/explore/654ed925000000001b00c2bc
+2023-12-03 13:27:41,607 - rendered_api.py -> requests - line:78 - INFO: 动态渲染请求成功,请求的url是: https://www.xiaohongshu.com/explore/654ed925000000001b00c2bc
+2023-12-03 13:28:03,001 - rendered_api.py -> requests - line:78 - INFO: 动态渲染请求成功,请求的url是: https://www.xiaohongshu.com/explore/654ed925000000001b00c2bc
+2023-12-03 13:28:13,296 - rendered_api.py -> requests - line:78 - INFO: 动态渲染请求成功,请求的url是: https://www.xiaohongshu.com/explore/654ed925000000001b00c2bc
+2023-12-03 13:28:44,842 - rendered_api.py -> requests - line:78 - INFO: 动态渲染请求成功,请求的url是: https://www.xiaohongshu.com/explore/654ed925000000001b00c2bc
+2023-12-03 13:28:56,249 - rendered_api.py -> requests - line:78 - INFO: 动态渲染请求成功,请求的url是: https://www.xiaohongshu.com/explore/654ed925000000001b00c2bc
+2023-12-03 13:29:34,814 - rendered_api.py -> requests - line:78 - INFO: 动态渲染请求成功,请求的url是: https://www.xiaohongshu.com/explore/654ed925000000001b00c2bc
+2023-12-03 13:29:59,333 - rendered_api.py -> requests - line:78 - INFO: 动态渲染请求成功,请求的url是: https://www.xiaohongshu.com/explore/654ed925000000001b00c2bc
+2023-12-03 13:56:38,921 - rendered_api.py -> requests - line:78 - INFO: 动态渲染请求成功,请求的url是: https://www.xiaohongshu.com/explore/654ed925000000001b00c2bc
+2023-12-03 13:56:50,347 - rendered_api.py -> requests - line:78 - INFO: 动态渲染请求成功,请求的url是: https://www.xiaohongshu.com/explore/654ed925000000001b00c2bc
+2023-12-03 13:57:01,347 - rendered_api.py -> requests - line:78 - INFO: 动态渲染请求成功,请求的url是: https://www.xiaohongshu.com/explore/654ed925000000001b00c2bc
+2023-12-03 13:57:14,403 - rendered_api.py -> requests - line:78 - INFO: 动态渲染请求成功,请求的url是: https://www.xiaohongshu.com/explore/654ed925000000001b00c2bc
+2023-12-03 14:01:51,207 - rendered_api.py -> requests - line:78 - INFO: 动态渲染请求成功,请求的url是: https://www.xiaohongshu.com/explore/654ed925000000001b00c2bc
+2023-12-03 14:02:21,331 - rendered_api.py -> requests - line:78 - INFO: 动态渲染请求成功,请求的url是: https://www.xiaohongshu.com/explore/654ed925000000001b00c2bc
+2023-12-03 14:03:43,006 - rendered_api.py -> requests - line:78 - INFO: 动态渲染请求成功,请求的url是: https://www.xiaohongshu.com/explore/654ed925000000001b00c2bc
+2023-12-03 14:06:41,350 - rendered_api.py -> requests - line:78 - INFO: 动态渲染请求成功,请求的url是: https://www.xiaohongshu.com/explore/654ed925000000001b00c2bc
+2023-12-03 14:06:41,351 - rendered_api.py -> requests - line:87 - ERROR: 动态渲染请求出现错误, 请求的url是: https://www.xiaohongshu.com/explore/654ed925000000001b00c2bc, 错误内容是'list' object has no attribute 'replace'
+2023-12-03 14:07:03,423 - rendered_api.py -> requests - line:78 - INFO: 动态渲染请求成功,请求的url是: https://www.xiaohongshu.com/explore/654ed925000000001b00c2bc
+2023-12-03 14:11:25,368 - rendered_api.py -> requests - line:78 - INFO: 动态渲染请求成功,请求的url是: https://www.xiaohongshu.com/explore/654ed925000000001b00c2bc
+2023-12-03 14:16:41,386 - rendered_api.py -> requests - line:78 - INFO: 动态渲染请求成功,请求的url是: http://www.taobao.com
+2023-12-03 14:18:53,433 - rendered_api.py -> requests - line:78 - INFO: 动态渲染请求成功,请求的url是: http://www.taobao.com
+2023-12-03 14:22:14,585 - implementation_class.py -> main_requests - line:300 - ERROR: 请求出现错误,出现的错误是: Timeout 15000ms exceeded.
+2023-12-03 14:22:14,586 - rendered_api.py -> requests - line:78 - INFO: 动态渲染请求成功,请求的url是: http://www.taobao.com
+2023-12-03 14:22:36,232 - implementation_class.py -> main_requests - line:300 - ERROR: 请求出现错误,出现的错误是: Timeout 15000ms exceeded.
+2023-12-03 14:22:36,233 - rendered_api.py -> requests - line:78 - INFO: 动态渲染请求成功,请求的url是: http://www.taobao.com
+2023-12-03 14:23:36,856 - rendered_api.py -> requests - line:78 - INFO: 动态渲染请求成功,请求的url是: http://www.taobao.com
+2023-12-03 14:24:22,005 - rendered_api.py -> requests - line:78 - INFO: 动态渲染请求成功,请求的url是: https://www.xiaohongshu.com/explore/654ed925000000001b00c2bc
+2023-12-03 14:25:01,155 - rendered_api.py -> requests - line:78 - INFO: 动态渲染请求成功,请求的url是: https://www.xiaohongshu.com/explore/654ed925000000001b00c2bc
+2023-12-03 14:26:25,191 - rendered_api.py -> requests - line:78 - INFO: 动态渲染请求成功,请求的url是: https://www.xiaohongshu.com/explore/654ed925000000001b00c2bc
+2023-12-03 14:43:07,596 - rendered_api.py -> requests - line:78 - INFO: 动态渲染请求成功,请求的url是: https://www.xiaohongshu.com/explore/654ed925000000001b00c2bc
+2023-12-03 14:43:23,435 - rendered_api.py -> requests - line:78 - INFO: 动态渲染请求成功,请求的url是: https://www.xiaohongshu.com/explore/654ed925000000001b00c2bc
+2023-12-03 14:46:16,077 - rendered_api.py -> requests - line:78 - INFO: 动态渲染请求成功,请求的url是: https://www.xiaohongshu.com/explore/654ed925000000001b00c2bc
+2023-12-03 14:46:51,722 - rendered_api.py -> requests - line:78 - INFO: 动态渲染请求成功,请求的url是: https://www.xiaohongshu.com/explore/654ed925000000001b00c2bc
+2023-12-03 14:48:21,942 - rendered_api.py -> requests - line:78 - INFO: 动态渲染请求成功,请求的url是: https://www.xiaohongshu.com/explore/654ed925000000001b00c2bc
+2023-12-03 14:48:32,629 - rendered_api.py -> requests - line:78 - INFO: 动态渲染请求成功,请求的url是: https://www.xiaohongshu.com/explore/654ed925000000001b00c2bc
+2023-12-03 14:52:39,175 - rendered_api.py -> requests - line:78 - INFO: 动态渲染请求成功,请求的url是: https://www.xiaohongshu.com/explore/654ed925000000001b00c2bc
+2023-12-03 14:53:34,417 - rendered_api.py -> requests - line:78 - INFO: 动态渲染请求成功,请求的url是: https://www.xiaohongshu.com/explore/654ed925000000001b00c2bc
+2023-12-03 14:59:05,074 - implementation_class.py -> main_requests - line:304 - ERROR: 请求出现错误,出现的错误是: Timeout 25000ms exceeded.
+2023-12-03 14:59:05,078 - rendered_api.py -> requests - line:78 - INFO: 动态渲染请求成功,请求的url是: https://www.xiaohongshu.com/explore/654ed925000000001b00c2bc
+2023-12-03 14:59:46,834 - implementation_class.py -> main_requests - line:304 - ERROR: 请求出现错误,出现的错误是: Target page, context or browser has been closed
+2023-12-03 14:59:46,841 - rendered_api.py -> requests - line:78 - INFO: 动态渲染请求成功,请求的url是: https://www.xiaohongshu.com/explore/654ed925000000001b00c2bc
+2023-12-03 15:01:07,027 - implementation_class.py -> main_requests - line:304 - ERROR: 请求出现错误,出现的错误是: Execution context was destroyed, most likely because of a navigation.
+2023-12-03 15:01:07,029 - rendered_api.py -> requests - line:78 - INFO: 动态渲染请求成功,请求的url是: https://www.xiaohongshu.com/explore/654ed925000000001b00c2bc
