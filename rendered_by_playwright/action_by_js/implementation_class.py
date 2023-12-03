@@ -9,6 +9,7 @@ import asyncio
 import re
 
 
+
 class ImplementationClass(InterfaceClass):
     """_summary_
     实现上面抽象类定义的方法
@@ -111,7 +112,10 @@ class ImplementationClass(InterfaceClass):
         ]
         """
         if self.cookies:
-            await self.context.add_cookies(self.cookies)
+            cookies_list = []
+            for item in self.cookies:
+                cookies_list.append({"name":item.name, "value":item.value, "domain":item.domain, "path":item.path})
+            await self.context.add_cookies(cookies_list)
     
     async def execute_js_to_page(self)->None:
         """_summary_
@@ -289,7 +293,7 @@ class ImplementationClass(InterfaceClass):
             await self.block_context_image() # 屏蔽上下文图片加载
             await self.block_context_video() # 屏蔽上下文视频加载
             await self.block_context_audio() # 屏蔽上下文音频加载
-            # await self.add_cookies_to_context() # 给上下文对象添加cookies
+            await self.add_cookies_to_context() # 给上下文对象添加cookies
             await self.goto_page() # 请求页面url
             if self.return_type == ReturnTypeEnum.TEXT.value:
                 result = await self.get_page_text()
