@@ -11,6 +11,6 @@ if __name__ == "__main__":
     pass
     # rendered_logger.info("你好") # 日志打印测试
     # uvicorn.run(app, host="0.0.0.0", port=9001, workers=4)
-    uvicorn.run("rendered_by_playwright.api.rendered_api:app", host="0.0.0.0", port=9002, workers=API_WORKERS)
+    uvicorn.run("rendered_by_playwright.api.rendered_api:app", host="0.0.0.0", port=9001, workers=API_WORKERS)
     # asyncio.run(main())
     
