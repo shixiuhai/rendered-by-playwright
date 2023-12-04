@@ -1,17 +1,23 @@
 from fastapi import FastAPI, HTTPException
 from fastapi.responses import JSONResponse,StreamingResponse
 from pydantic import BaseModel
-from typing import List, Optional
+from typing import List, Literal, Optional
 from rendered_by_playwright.action_by_js.implementation_class import ImplementationClass
 from rendered_by_playwright.utils.log import rendered_logger
 from rendered_by_playwright.enum_class.browser_type_enum import BrowserTypeEnum
 from rendered_by_playwright.enum_class.return_type_enum import ReturnTypeEnum
 from io import BytesIO
+
 class CookiesItem(BaseModel):
-    name:str # cookie名称
-    value:str # cookie值
-    domain:str # cookie指向的域名
-    path:str # cookie指向郁域名路径
+    name: str
+    value: str
+    url: Optional[str] = None
+    domain: Optional[str]
+    path: Optional[str]
+    expires: Optional[float] = None
+    httpOnly: Optional[bool] = None
+    secure: Optional[bool] = None
+    sameSite: Optional[Literal["Lax", "None", "Strict"]] = None
 
 class ResquestsData(BaseModel):
     url:str

@@ -109,14 +109,43 @@ class ImplementationClass(InterfaceClass):
         Returns:
             None: _description_
         cookies [
-            {"name":"a", "value":"b", "path":"c"},
-            {"name":"a1", "value":"b1", "path":"c1"}
+            {"name":"a", "value":"b", "path":"c","domain":"d"},
+            {"name":"a1", "value":"b1", "path":"c1","domain":"d1"}
         ]
+        name: str
+        value: str
+        url: Optional[str] = None
+        domain: Optional[str]
+        path: Optional[str]
+        expires: Optional[float] = None
+        httpOnly: Optional[bool] = None
+        secure: Optional[bool] = None
+        sameSite: Optional[Literal["Lax", "None", "Strict"]] = None
         """
+        
         if self.cookies:
             cookies_list = []
             for item in self.cookies:
-                cookies_list.append({"name":item.name, "value":item.value, "domain":item.domain, "path":item.path})
+                cookies_item = {}
+                if item.name:
+                    cookies_item["name"] = item.name
+                if item.value:
+                    cookies_item["value"] = item.value
+                if item.url:
+                    cookies_item["url"] = item.url
+                if item.domain:
+                    cookies_item["domain"] = item.domain
+                if item.path:
+                    cookies_item["path"] = item.path
+                if item.expires:
+                    cookies_item["expires"] = item.expires
+                if item.httpOnly:
+                    cookies_item["httpOnly"] = item.httpOnly
+                if item.secure:
+                    cookies_item["secure"] = item.secure
+                if item.sameSite:
+                    cookies_item["sameSite"] = item.sameSite
+                cookies_list.append(cookies_item)
             await self.context.add_cookies(cookies_list)
     
     async def execute_js_to_page_after(self)->None:
