@@ -10,7 +10,7 @@ class InterfaceClass(metaclass=ABCMeta):
         metaclass (_type_, optional): _description_. Defaults to ABCMeta.
     """
     def __init__(self) -> None:
-        self.browser = None
+        # self.browser = None
         self.context = None
         self.page = None
         self.url = None
@@ -184,15 +184,27 @@ class InterfaceClass(metaclass=ABCMeta):
         pass
     
     @abstractclassmethod
-    async def close_browser(self)->None:
+    async def close_context(self)->None:
         """_summary_
-        关闭浏览器对象
+        关闭context对象
         Args:
-            page (object): _description_
+            context (object): _description_
         Returns:
             None: _description_
         """
         pass
+    
+    
+    # @abstractclassmethod
+    # async def close_browser(self)->None:
+    #     """_summary_
+    #     关闭浏览器对象
+    #     Args:
+    #         browser (object): _description_
+    #     Returns:
+    #         None: _description_
+    #     """
+    #     pass
     
     # @abstractclassmethod
     # def add_page_attributes(self, page:object)->None:

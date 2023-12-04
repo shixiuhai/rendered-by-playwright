@@ -1,13 +1,13 @@
 from rendered_by_playwright.action_by_js.interface_class import InterfaceClass
-from playwright.async_api import async_playwright
 from playwright_stealth import stealth_async
 from rendered_by_playwright.enum_class.browser_type_enum import BrowserTypeEnum
 from rendered_by_playwright.enum_class.return_type_enum import ReturnTypeEnum
 from rendered_by_playwright.utils.log import rendered_logger
-from rendered_by_playwright.settings import HEADLESS
+import platform
 import asyncio
 import re
-import platform
+from rendered_by_playwright.action_by_js.create_browser import Browser
+
 os_name = platform.system()
 if os_name == "Windows":
     HEADLESS = False
@@ -23,39 +23,34 @@ class ImplementationClass(InterfaceClass):
     
     async def create_browser_context_page(self):
         """_summary_
-        创建一个 浏览器对象, 上下文本对象, 页面对象， 实现反扒配置，初始化窗口大小, 设置页面超时
+        创建一个 上下文本对象, 页面对象， 实现反扒配置，初始化窗口大小, 设置页面超时
         (browser, context, page)
         Returns:
             (object,object,object): _description_
         """
-        p = await async_playwright().start()  # 初始化 Playwright
+       
+        browser_object = Browser()
+        await browser_object.create()
         
-        launch_options = {
-            'headless': HEADLESS,
-            'args': ['--no-sandbox', '--disable-gpu'],
-            'timeout': self.timeout*1000
-            # 'slow_mo': 50,
-            # 'devtools': True,
-            # 'ignore_default_args': True,
-            # 'device': 'iPhone 8'  # 模拟 iPhone 8
-        }
-        if self.proxy:
-            launch_options['proxy'] = {'server': self.proxy}
-        
-
         if self.browser_type == BrowserTypeEnum.CHROMIUM.value:
-            self.browser = await p.chromium.launch(**launch_options) # 启动 Chromium 浏览器
+            browser = browser_object.chromium
         
         if self.browser_type == BrowserTypeEnum.FIREFOX.value:
-            self.browser = await p.firefox.launch(**launch_options) # 启动 firefox 浏览器
+            browser = browser_object.firefox
         
         if self.browser_type == BrowserTypeEnum.WEBKIT.value:
-            self.browser = await p.webkit.launch(**launch_options) # 启动 webkit 浏览器
+            browser = browser_object.webkit
     
+        context_options = {
+            "viewport": {"width": self.view_window_width, "height": self.view_window_height},
+            # "device_scale_factor":1
+        }
+        if self.proxy:
+            context_options['proxy'] = {'server': self.proxy}    
+        if self.user_agent:
+            context_options['user_agent'] = self.user_agent
         
-        self.context = await self.browser.new_context(user_agent=self.user_agent, 
-                                                      viewport={"width": self.view_window_width, "height": self.view_window_height},
-                                                      device_scale_factor=1)
+        self.context = await browser.new_context(**context_options)
        
         # await self.add_anti_detection_js_to_context(self.context) # 添加反爬取js
 
@@ -183,25 +178,6 @@ class ImplementationClass(InterfaceClass):
                 await self.page.goto(self.url, wait_until='networkidle')
             else:
                 await self.page.goto(self.url, wait_until='load')
-            await self.page.evaluate('''async () => {
-                await new Promise((resolve) => {
-                    const distance = 300;  // 每次滚动的距离
-                    const delay = 200;  // 滚动之间的延迟时间
-
-                    function scrollToBottom() {
-                        const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-                        const scrollHeight = Math.max(document.documentElement.scrollHeight, document.body.scrollHeight);
-                        if (scrollTop + window.innerHeight >= scrollHeight) {
-                            resolve();
-                        } else {
-                            window.scrollBy(0, distance);
-                            setTimeout(scrollToBottom, delay);
-                        }
-                    }
-
-                    scrollToBottom();
-                });
-            }''')
             self.is_handle_page_xhr_text_list_sucess = True
     
     async def handle_page_xhr_url(self, response)->None:
@@ -292,17 +268,27 @@ class ImplementationClass(InterfaceClass):
         """
         if self.is_block_audio:
             await self.context.route(re.compile(r"(\.wav)|(\.mp3)"), lambda route: route.abort())
-            
-       
-    async def close_browser(self)->None:
+    
+    async def close_context(self)->None:
         """_summary_
-        关闭浏览器对象
+        关闭context对象
         Args:
-            page (object): _description_
+            context (object): _description_
         Returns:
             None: _description_
         """
-        await self.browser.close() # 关闭浏览器对象 
+        await self.context.close() # 关闭浏览器对象 
+    
+       
+    # async def close_browser(self)->None:
+    #     """_summary_
+    #     关闭浏览器对象
+    #     Args:
+    #         browser (object): _description_
+    #     Returns:
+    #         None: _description_
+    #     """
+    #     await self.browser.close() # 关闭浏览器对象 
         
     async def main_requests(self, url:str, cookies:list, is_block_image:bool, is_block_video:bool,
                             is_block_audio:bool,  js_script_after_page:str, js_script_before_page:str, user_agent:str, timeout:int, 
@@ -371,7 +357,8 @@ class ImplementationClass(InterfaceClass):
             rendered_logger.error(f"请求出现错误,出现的错误是: {error}")
         finally:
             if HEADLESS:
-                await self.close_browser()
+                await self.close_context()
+                # await self.close_browser()
    
         
         
