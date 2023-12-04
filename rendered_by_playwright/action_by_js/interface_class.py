@@ -129,6 +129,16 @@ class InterfaceClass(metaclass=ABCMeta):
         pass
     
     @abstractclassmethod
+    async def get_page_cookies(self)->list:
+        """_summary_
+        获取页面cookies
+        Args:
+            page (object): _description
+        Returns:
+            list: _description_
+        """
+    
+    @abstractclassmethod
     async def get_page_screenshot(self)->bytes:
         """_summary_
         获取页面截图

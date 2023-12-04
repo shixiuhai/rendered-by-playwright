@@ -81,12 +81,28 @@ async def requests(data: ResquestsData):
         
         
         rendered_logger.info(f"动态渲染请求成功,请求的url是: {data.url}")
-        if return_type == ReturnTypeEnum.TEXT.value or return_type == ReturnTypeEnum.HANDLEXHR.value:
+        if return_type == ReturnTypeEnum.TEXT.value:
             return JSONResponse(
-            content={
-                        "code": 200,
-                        "text":result
-            })
+                content={
+                            "code": 200,
+                            f"{ReturnTypeEnum.TEXT.value}":result
+                })
+        
+        if return_type == ReturnTypeEnum.HANDLEXHR.value:
+            return JSONResponse(
+                content={
+                            "code": 200,
+                            f"{ReturnTypeEnum.HANDLEXHR.value}":result
+                })
+            
+        if return_type == ReturnTypeEnum.COOKIES.value:
+            return JSONResponse(
+                content={
+                            "code": 200,
+                            f"{ReturnTypeEnum.COOKIES.value}":result
+                })
+            
+            
         if return_type == ReturnTypeEnum.SCREENSHOT.value:
             return StreamingResponse(BytesIO(result), media_type="image/png")
     

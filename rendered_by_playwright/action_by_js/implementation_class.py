@@ -197,6 +197,17 @@ class ImplementationClass(InterfaceClass):
         page_content = await self.page.content()
         return page_content
     
+    async def get_page_cookies(self)->list:
+        """_summary_
+        获取页面cookies
+        Args:
+            page (object): _description
+        Returns:
+            list: _description_
+        """
+        page_cookies = await self.context.cookies()
+        return page_cookies
+    
         
     async def get_page_screenshot(self)->bytes:
         """_summary_
@@ -311,14 +322,21 @@ class ImplementationClass(InterfaceClass):
             await self.execute_js_to_page_before() # 在访问页面前执行js
             await self.goto_page() # 请求页面url
             await self.execute_js_to_page_after() # 在访问页面后执行js
+            
             if self.return_type == ReturnTypeEnum.TEXT.value:
                 result = await self.get_page_text()
+            
             if self.return_type == ReturnTypeEnum.SCREENSHOT.value:
                 result = await self.get_page_screenshot()
+            
             if self.return_type == ReturnTypeEnum.HANDLEXHR.value:
                 while self.is_handle_page_xhr_text_list_sucess is False:
-                    await asyncio.sleep(0.1)
+                    await asyncio.sleep(0.2)
                 result = self.handle_page_xhr_text_list
+                
+            if self.return_type == ReturnTypeEnum.COOKIES.value:
+                result = await self.get_page_cookies()
+            
             return result
         except Exception as error:
             rendered_logger.error(f"请求出现错误,出现的错误是: {error}")
