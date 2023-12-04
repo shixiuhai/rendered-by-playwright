@@ -1,7 +1,7 @@
 ## rendered-by-playwright项目
 ### api接口文档
 * https://console-docs.apipost.cn/preview/73fc7c6d53b316e0/6bf3e4ff47acf074
-### 项目docker部署到ubuntu
+### 项目docker部署到linux
 * linux系统安装docker
 * git拉取项目 
 * 运行 cd rendered_by_playwright && bash build.sh
