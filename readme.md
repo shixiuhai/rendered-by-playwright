@@ -4,7 +4,8 @@
 ### 项目docker部署到linux
 * linux系统安装docker
 * git拉取项目 
-* 运行 cd rendered_by_playwright && bash build.sh
+* 运行 cd rendered-by-playwright
+ && bash build.sh
 ### 1. 项目初衷
 * 实现一个类似splash动态渲染通过api接口实现
 * 实现一个类似selenium将逐步操作方法通过接口请求实现
