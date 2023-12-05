@@ -44,17 +44,6 @@ class InterfaceClass(metaclass=ABCMeta):
         pass
     
     @abstractclassmethod
-    async def add_anti_detection_js_to_context(self)->None:
-        """_summary_
-        给上下文添加反爬取js
-        Args:
-            context (object): _description_
-        Returns:
-            None: _description_
-        """
-        pass
-    
-    @abstractclassmethod
     async def add_anti_detection_js_to_page(self)->None:
         """_summary_
         给页面添加反爬取js

@@ -51,32 +51,11 @@ class ImplementationClass(InterfaceClass):
             context_options['user_agent'] = self.user_agent
         
         self.context = await browser.new_context(**context_options)
-       
-        # await self.add_anti_detection_js_to_context(self.context) # 添加反爬取js
 
         self.page = await self.context.new_page() # 在这里执行其他操作，例如打开页面、截图等
-        await self.add_anti_detection_js_to_page()
-        
-        # await self.page.set_viewport_size() # 设置浏览器窗口的宽和高
-        self.page.set_default_timeout(self.timeout*1000) # 设置page超时
-            
-            
+        await self.add_anti_detection_js_to_page() # 注入反扒js
     
-    async def add_anti_detection_js_to_context(self)->None:
-        """_summary_
-        给页面添加反爬取js
-        Args:
-            context (object): _description_
-        Returns:
-            None: _description_
-        """
-        await self.context.add_init_script("""
-            () => {
-                Object.defineProperty(navigator, 'webdriver', {
-                    get: () => false,
-                });
-            }
-        """)
+        self.page.set_default_timeout(self.timeout*1000) # 设置page超时
         
     async def add_anti_detection_js_to_page(self)->None:
         """_summary_
