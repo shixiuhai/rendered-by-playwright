@@ -11,7 +11,6 @@ class Browser:
     chromium = None
     firefox = None
     webkit = None
-
     async def create(self):
             if Browser.chromium is None:
                 Browser.chromium = await self.create_chromium_browser()
