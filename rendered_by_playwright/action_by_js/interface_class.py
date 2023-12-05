@@ -31,6 +31,9 @@ class InterfaceClass(metaclass=ABCMeta):
         self.handle_xhr_path = None
         self.handle_page_xhr_text_list = []
         self.is_handle_page_xhr_text_list_sucess = False
+        self.wait_until = "load"
+        self.after_page_load_delay = None
+        self.execut_js_response_after_page = ""
         
     
     @abstractclassmethod

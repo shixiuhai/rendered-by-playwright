@@ -131,8 +131,9 @@ class ImplementationClass(InterfaceClass):
             None: _description_
         """
         if self.js_script_after_page:
-            await self.page.evaluate(self.js_script_after_page)
-            
+            rendered_logger.info(self.js_script_after_page)
+            self.execut_js_response_after_page =  await self.page.evaluate(self.js_script_after_page) # 访问页面后执行js后，js返回的结果
+          
     async def execute_js_to_page_before(self)->None:
         """_summary_
         将js注入到访问url前
@@ -152,12 +153,12 @@ class ImplementationClass(InterfaceClass):
             url (str): _description_
         """
         if self.url:
-            self.page.on('response', self.handle_page_xhr_url)
             if self.handle_xhr_path:
-                await self.page.goto(self.url, wait_until='networkidle')
-            else:
-                await self.page.goto(self.url, wait_until='load')
-            self.is_handle_page_xhr_text_list_sucess = True
+                self.page.on('response', self.handle_page_xhr_url) # 开启xhrl监听
+            await self.page.goto(self.url, wait_until = self.wait_until) # 完全加载
+            if self.after_page_load_delay:
+                await asyncio.sleep(self.after_page_load_delay)
+            self.is_handle_page_xhr_text_list_sucess = True # xhrl加载全部完成
     
     async def handle_page_xhr_url(self, response)->None:
         """_summary_
@@ -233,10 +234,8 @@ class ImplementationClass(InterfaceClass):
             None: _description_
         """
         if self.is_block_image:
-            # await self.context.route("**/*.{png,jpg,jpeg}", lambda route: route.abort())
             await self.context.route(re.compile(r"(\.png)|(\.jpg)|(webp)"), lambda route: route.abort())
             
-        
     async def block_context_audio(self)->None:
         """_summary_
         屏蔽页面音频加载
@@ -258,21 +257,23 @@ class ImplementationClass(InterfaceClass):
         """
         await self.context.close() # 关闭浏览器对象 
     
-       
-    # async def close_browser(self)->None:
-    #     """_summary_
-    #     关闭浏览器对象
-    #     Args:
-    #         browser (object): _description_
-    #     Returns:
-    #         None: _description_
-    #     """
-    #     await self.browser.close() # 关闭浏览器对象 
         
-    async def main_requests(self, url:str, cookies:list, is_block_image:bool, is_block_video:bool,
-                            is_block_audio:bool,  js_script_after_page:str, js_script_before_page:str, user_agent:str, timeout:int, 
-                            max_retry_times:int, browser_type:str, return_type:str, view_window_width:int,
-                            view_window_height:int, proxy:str, handle_xhr_path:str):
+    async def main_requests(self, url:str, 
+                            cookies:list, 
+                            is_block_image:bool, 
+                            is_block_video:bool,
+                            is_block_audio:bool,  
+                            js_script_after_page:str, 
+                            js_script_before_page:str,
+                            user_agent:str, timeout:int, 
+                            max_retry_times:int, 
+                            browser_type:str, 
+                            return_type:str, 
+                            view_window_width:int,
+                            view_window_height:int, 
+                            proxy:str, handle_xhr_path:str, 
+                            wait_until:str, 
+                            after_page_load_delay:float):
         """_summary_
         定义一个汇总请求方法
         url:str
@@ -289,6 +290,8 @@ class ImplementationClass(InterfaceClass):
         view_window_width:Optional[int] = 1920 # 默认开启浏览器的窗口宽
         view_window_height:Optional[int] = 1080 # 默认开启浏览器的窗口高
         proxy:Optional[str] = None # 默认开启浏览器的窗口高
+        wait_until:Optional[str] = "load" # 页面完成加载的结拜
+        after_page_load_delay:Optional[float] = None # 页面加载完成后延时时间
         """
         self.url = url
         self.cookies = cookies
@@ -306,9 +309,10 @@ class ImplementationClass(InterfaceClass):
         self.view_window_height = view_window_height
         self.proxy = proxy
         self.handle_xhr_path = handle_xhr_path
+        self.wait_until = wait_until
+        self.after_page_load_delay = after_page_load_delay
         try:
             await self.create_browser_context_page() # 创建一个 浏览器对象, 上下文本对象, 页面对象， 实现反扒配置，初始化窗口大小
-            # return (self.browser, self.context, self.page)
             await self.block_context_image() # 屏蔽上下文图片加载
             await self.block_context_video() # 屏蔽上下文视频加载
             await self.block_context_audio() # 屏蔽上下文音频加载
@@ -325,11 +329,14 @@ class ImplementationClass(InterfaceClass):
             
             if self.return_type == ReturnTypeEnum.HANDLEXHR.value:
                 while self.is_handle_page_xhr_text_list_sucess is False:
-                    await asyncio.sleep(0.2)
+                    await asyncio.sleep(0.1)
                 result = self.handle_page_xhr_text_list
                 
             if self.return_type == ReturnTypeEnum.COOKIES.value:
                 result = await self.get_page_cookies()
+                
+            if self.return_type == ReturnTypeEnum.JSRESPONSE.value:
+                result = self.execut_js_response_after_page
             
             return result
         except Exception as error:
@@ -337,7 +344,7 @@ class ImplementationClass(InterfaceClass):
         finally:
             if HEADLESS:
                 await self.close_context()
-                # await self.close_browser()
+
    
         
         

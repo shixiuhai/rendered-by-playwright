@@ -4,6 +4,7 @@ class ReturnTypeEnum(Enum):
     TEXT = "text"
     # IMAGE = "image"
     SCREENSHOT = "screenshot"
-    HANDLEXHR = "handlexhr" 
+    HANDLEXHR = "handle_xhr" 
     COOKIES = "cookies"
+    JSRESPONSE = "js_response"
     # VIDEO = "video"
