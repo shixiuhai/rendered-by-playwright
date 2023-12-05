@@ -6,7 +6,6 @@ from rendered_by_playwright.utils.log import rendered_logger
 os_name = platform.system()
 if os_name == "Windows":
     HEADLESS = False
-
 class Browser:
     chromium = None
     firefox = None

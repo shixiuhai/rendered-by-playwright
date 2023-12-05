@@ -105,7 +105,7 @@ async def requests(data: ResquestsData):
             return JSONResponse(
                 content={
                             "code": 200,
-                            f"{ReturnTypeEnum.HANDLEXHR.value}":result
+                            f"{ReturnTypeEnum.HANDLEXHR.value}":[item.replace("\\u0026","&") for item in result]
                 })
             
         if return_type == ReturnTypeEnum.COOKIES.value:

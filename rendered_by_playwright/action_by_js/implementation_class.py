@@ -50,7 +50,8 @@ class ImplementationClass(InterfaceClass):
         if self.user_agent:
             context_options['user_agent'] = self.user_agent
         
-        self.context = await browser.new_context(**context_options)
+        self.context = await browser.new_context(**context_options) # 创建上下文
+        await self.add_cookies_to_context() # 给上下文对象添加cookies
 
         self.page = await self.context.new_page() # 在这里执行其他操作，例如打开页面、截图等
         await self.add_anti_detection_js_to_page() # 注入反扒js
@@ -95,6 +96,10 @@ class ImplementationClass(InterfaceClass):
         httpOnly: Optional[bool] = None
         secure: Optional[bool] = None
         sameSite: Optional[Literal["Lax", "None", "Strict"]] = None
+        
+        下面两个值必须同时出现
+        sameSite 设置为 "None"。
+        secure 设置为 true，即 cookies 只在使用 HTTPS 连接时发送。
         """
         
         if self.cookies:
@@ -316,7 +321,6 @@ class ImplementationClass(InterfaceClass):
             await self.block_context_image() # 屏蔽上下文图片加载
             await self.block_context_video() # 屏蔽上下文视频加载
             await self.block_context_audio() # 屏蔽上下文音频加载
-            await self.add_cookies_to_context() # 给上下文对象添加cookies
             await self.execute_js_to_page_before() # 在访问页面前执行js
             await self.goto_page() # 请求页面url
             await self.execute_js_to_page_after() # 在访问页面后执行js
