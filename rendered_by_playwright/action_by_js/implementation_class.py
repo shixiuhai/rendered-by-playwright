@@ -43,7 +43,8 @@ class ImplementationClass(InterfaceClass):
     
         context_options = {
             "viewport": {"width": self.view_window_width, "height": self.view_window_height},
-            "device_scale_factor":1
+            "device_scale_factor":1, 
+            "bypass_csp":True
         }
         if self.proxy:
             context_options['proxy'] = {'server': self.proxy}    
