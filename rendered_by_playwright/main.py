@@ -14,6 +14,5 @@ if os_name == "Windows":
 
 if __name__ == "__main__":
     rendered_logger.info("渲染框架启动")
-    # uvicorn.run(app, host="0.0.0.0", port=9001, workers=4)
     uvicorn.run("rendered_by_playwright.api.rendered_api:app", host="0.0.0.0", port=9001, workers=API_WORKERS)
 
