@@ -7,7 +7,7 @@ import platform
 import asyncio
 import re
 from rendered_by_playwright.action_by_js.create_browser import Browser
-
+from rendered_by_playwright.settings import HEADLESS
 os_name = platform.system()
 if os_name == "Windows":
     HEADLESS = False
