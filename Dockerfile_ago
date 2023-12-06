@@ -1,7 +1,4 @@
-FROM playwright/base
-# 设置时区
-ENV TZ=Asia/Shanghai
-RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
+FROM robd003/python3.10
 # 创建工作文件夹
 WORKDIR /rendered-by-playwright/rendered_by_playwright
 # 把当前目录rendered_by_playwright里面内容 copy到/rendered-by-playwright/rendered_by_playwright文件夹内
