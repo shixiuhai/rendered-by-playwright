@@ -74,25 +74,27 @@ async def requests(data: ResquestsData):
         
         implementation_class = ImplementationClass()
         
-        result = await implementation_class.main_requests(url=url, cookies=cookies,
-                                                    is_block_image=is_block_image,
-                                                    is_block_video=is_block_video, 
-                                                    is_block_audio=is_block_audio,
-                                                    js_script_after_page=js_script_after_page,
-                                                    js_script_before_page=js_script_before_page,
-                                                    user_agent=user_agent, 
-                                                    timeout=timeout,
-                                                    max_retry_times=max_retry_times, 
-                                                    browser_type=browser_type,
-                                                    return_type=return_type, 
-                                                    view_window_width=view_window_width, 
-                                                    view_window_height=view_window_height,
-                                                    proxy=proxy,
-                                                    handle_xhr_path=handle_xhr_path,
-                                                    wait_until=wait_until,
-                                                    after_page_load_delay=after_page_load_delay)
-        
-        
+        result = await implementation_class.\
+            main_requests(
+                            url=url, 
+                            cookies=cookies,
+                            is_block_image=is_block_image,
+                            is_block_video=is_block_video, 
+                            is_block_audio=is_block_audio,
+                            js_script_after_page=js_script_after_page,
+                            js_script_before_page=js_script_before_page,
+                            user_agent=user_agent, 
+                            timeout=timeout,
+                            max_retry_times=max_retry_times, 
+                            browser_type=browser_type,
+                            return_type=return_type, 
+                            view_window_width=view_window_width, 
+                            view_window_height=view_window_height,
+                            proxy=proxy,
+                            handle_xhr_path=handle_xhr_path,
+                            wait_until=wait_until,
+                            after_page_load_delay=after_page_load_delay)
+            
         rendered_logger.info(f"动态渲染请求成功,请求的url是: {data.url}")
         if return_type == ReturnTypeEnum.TEXT.value:
             return JSONResponse(
