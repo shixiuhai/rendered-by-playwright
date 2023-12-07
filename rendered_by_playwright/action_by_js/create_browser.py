@@ -1,7 +1,6 @@
 from playwright.async_api import async_playwright
 from rendered_by_playwright.settings import HEADLESS
 import platform
-import asyncio
 from rendered_by_playwright.utils.log import rendered_logger
 os_name = platform.system()
 if os_name == "Windows":
@@ -37,7 +36,7 @@ class Browser:
         p = await async_playwright().start()  # 初始化 Playwright
         browser_options = {
             'headless': HEADLESS,
-            'args': ['--no-sandbox', '--disable-gpu'],
+            'args': ['--disable-gpu'],
             # 'timeout': 10000
             # 'slow_mo': 50,
             # 'devtools': True,
@@ -54,7 +53,7 @@ class Browser:
         p = await async_playwright().start()  # 初始化 Playwright
         browser_options = {
             'headless': HEADLESS,
-            'args': ['--no-sandbox', '--disable-gpu'],
+            'args': ['--disable-gpu'],
             # 'timeout': self.timeout*1000
             # 'slow_mo': 50,
             # 'devtools': True,
@@ -67,7 +66,7 @@ class Browser:
         p = await async_playwright().start()  # 初始化 Playwright
         browser_options = {
             'headless': HEADLESS,
-            'args': ['--no-sandbox', '--disable-gpu'],
+            # 'args': ['--no-sandbox', '--disable-gpu'],
             # 'timeout': self.timeout*1000
             # 'slow_mo': 50,
             # 'devtools': True,
