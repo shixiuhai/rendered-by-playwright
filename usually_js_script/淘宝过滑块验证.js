@@ -1,5 +1,6 @@
 //  过淘宝滑块滑动js
 // 获取滑块元素的函数
+// https://www.cnblogs.com/yizhiyan/p/11286028.html js过淘宝
 function getSliderElement() {
     return document.evaluate('//*[@id="nc_1_n1z"]', document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
 }
