@@ -8,6 +8,8 @@ WORKDIR /rendered-by-playwright/rendered_by_playwright
 # 把当前目录rendered_by_playwright里面内容 copy到/rendered-by-playwright/rendered_by_playwright文件夹内
 COPY  ./rendered_by_playwright /rendered-by-playwright/rendered_by_playwright
 RUN apt update && apt install python3-pip -y
+# RUN mkdir -p ~/.pip && \
+#     echo -e "[global]\nindex-url = https://mirrors.aliyun.com/pypi/simple/" > ~/.pip/pip.conf
 RUN pip install --no-cache-dir -r requirements.txt
 RUN playwright install
 RUN chmod +x start.sh
