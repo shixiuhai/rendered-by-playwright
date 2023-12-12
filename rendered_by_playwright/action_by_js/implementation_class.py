@@ -335,7 +335,7 @@ class ImplementationClass(InterfaceClass):
             
             if self.return_type == ReturnTypeEnum.TEXT.value:
                 result = await self.get_page_text()
-                if self.parse_by_regular:
+                if self.parse_by_replace:
                     result = parse_replace(self.parse_by_replace, result)
                 if self.parse_by_regular:
                     result = parse_regular(self.parse_by_regular, result)
@@ -347,7 +347,7 @@ class ImplementationClass(InterfaceClass):
                 while self.is_handle_page_xhr_text_list_sucess is False:
                     await asyncio.sleep(0.1)
                 result = self.handle_page_xhr_text_list
-                if self.parse_by_regular:
+                if self.parse_by_replace:
                     for i in range(len(result)):
                         result[i] = parse_replace(self.parse_by_replace, result[i])
                 if self.parse_by_regular:
@@ -359,7 +359,7 @@ class ImplementationClass(InterfaceClass):
                 
             if self.return_type == ReturnTypeEnum.JSRESPONSE.value:
                 result = self.execut_js_response_after_page
-                if self.parse_by_regular:
+                if self.parse_by_replace:
                     result = parse_replace(self.parse_by_replace, result)
                 if self.parse_by_regular:
                     result = parse_regular(self.parse_by_regular, result)
