@@ -322,7 +322,7 @@ class ImplementationClass(InterfaceClass):
         self.handle_xhr_path = handle_xhr_path
         self.wait_until = wait_until
         self.after_page_load_delay = after_page_load_delay
-        self.parse_by_regular = parse_by_regular,
+        self.parse_by_regular = parse_by_regular
         self.parse_by_replace = parse_by_replace
         try:
             await self.create_browser_context_page() # 创建一个 浏览器对象, 上下文本对象, 页面对象， 实现反扒配置，初始化窗口大小
