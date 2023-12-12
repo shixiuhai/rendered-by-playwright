@@ -6,7 +6,15 @@ def parse_regular(reg:str, text:str):
         reg (str): _description_
         text (str): _description_
     """
-    matches = re.findall(reg, text)
+    
+    # 使用 | 分割规则字符串，并去除空字符串
+    reg_list = [r.strip() for r in reg.split('|') if r.strip()]
+    # 将多个正则规则编译成正则表达式对象
+    compiled_patterns = [re.compile(r) for r in reg_list]
+    # 遍历所有编译后的正则表达式对象，匹配文本
+    matches = []
+    for pattern in compiled_patterns:
+        matches.extend(pattern.findall(text))
     return matches
 
 def parse_replace(reg:str, text:str):
