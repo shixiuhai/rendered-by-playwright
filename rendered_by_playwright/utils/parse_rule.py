@@ -27,12 +27,13 @@ def parse_replace(reg:str, text:str):
     '("a","b")|("c","d")'
     replace_list = reg.split("|")
     for replace_item in replace_list:
-        text.replace(replace_item[0], replace_item[1])
+        text = text.replace(eval(replace_item)[0], eval(replace_item)[1])
     return text
     
 
 if __name__ == "__main__":
-    a="aaaccc"
+    a_1="aaaccc"
     b= "这是一段文本，包含一些URL：https://www.example.com 和 http://example.org。"
-    # print(parse_replace('("a","b")|("c","d")',a))
-    print(parse_regular('https?://\S+|www\.\S+',b))
+    print(parse_replace("('a','b')|('c','d')",a_1))
+    # a_1.replace("a","b")
+    # print(parse_regular('https?://\S+|www\.\S+',b))
