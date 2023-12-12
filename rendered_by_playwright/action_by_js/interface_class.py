@@ -34,7 +34,8 @@ class InterfaceClass(metaclass=ABCMeta):
         self.wait_until = "load"
         self.after_page_load_delay = None
         self.execut_js_response_after_page = ""
-        
+        self.parse_by_regular = None
+        self.parse_by_replace = None
     
     @abstractclassmethod
     async def create_browser_context_page(self):

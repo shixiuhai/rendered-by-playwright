@@ -38,7 +38,8 @@ class ResquestsData(BaseModel):
     handle_xhr_path:Optional[str] = None # 筛选动态页面加载xhr接口返回数据
     wait_until:Optional[str] = "load" # 页面完成加载的结拜
     after_page_load_delay:Optional[float] = None # 页面加载完成后延时时间
-    
+    parse_by_regular:[str] = None # 正则对返回内容进行处理 传入方式 "*a|*b"
+    parse_by_replace:[str] = None # 通过replace对返回内容进行处理 "(a,b)|(c,d)"
     
     
 app = FastAPI()
@@ -69,8 +70,8 @@ async def requests(data: ResquestsData):
         handle_xhr_path = data.handle_xhr_path
         wait_until = data.wait_until
         after_page_load_delay = data.after_page_load_delay
-        
-        
+        parse_by_regular = data.parse_by_regular
+        parse_by_replace = data.parse_by_replace
         
         implementation_class = ImplementationClass()
         
@@ -93,7 +94,9 @@ async def requests(data: ResquestsData):
                             proxy=proxy,
                             handle_xhr_path=handle_xhr_path,
                             wait_until=wait_until,
-                            after_page_load_delay=after_page_load_delay)
+                            after_page_load_delay=after_page_load_delay,
+                            parse_by_regular=parse_by_regular,
+                            parse_by_replace=parse_by_replace)
             
         rendered_logger.info(f"动态渲染请求成功,请求的url是: {data.url}")
         if return_type == ReturnTypeEnum.TEXT.value:
@@ -107,7 +110,7 @@ async def requests(data: ResquestsData):
             return JSONResponse(
                 content={
                             "code": 200,
-                            f"{ReturnTypeEnum.HANDLEXHR.value}":[item.replace("\\u0026","&") for item in result]
+                            f"{ReturnTypeEnum.HANDLEXHR.value}":result
                 })
             
         if return_type == ReturnTypeEnum.COOKIES.value:
