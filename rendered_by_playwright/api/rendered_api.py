@@ -38,8 +38,8 @@ class ResquestsData(BaseModel):
     handle_xhr_path:Optional[str] = None # 筛选动态页面加载xhr接口返回数据
     wait_until:Optional[str] = "load" # 页面完成加载的结拜
     after_page_load_delay:Optional[float] = None # 页面加载完成后延时时间
-    parse_by_regular:[str] = None # 正则对返回内容进行处理 传入方式 "*a|*b"
-    parse_by_replace:[str] = None # 通过replace对返回内容进行处理 "(a,b)|(c,d)"
+    parse_by_regular:Optional[str] = None # 正则对返回内容进行处理 传入方式 "*a|*b"
+    parse_by_replace:Optional[str] = None # 通过replace对返回内容进行处理 "(a,b)|(c,d)"
     
     
 app = FastAPI()
