@@ -9,6 +9,7 @@ import re
 from rendered_by_playwright.action_by_js.create_browser import Browser
 from rendered_by_playwright.settings import HEADLESS
 from rendered_by_playwright.utils.parse_rule import parse_regular, parse_replace
+from rendered_by_playwright.utils.custom_error import CustomException
 os_name = platform.system()
 if os_name == "Windows":
     HEADLESS = False
@@ -53,6 +54,7 @@ class ImplementationClass(InterfaceClass):
             context_options['user_agent'] = self.user_agent
         
         self.context = await browser.new_context(**context_options) # 创建上下文
+        rendered_logger.info(f"======{self.url}请求开启了浏览器上下文======")
         await self.add_cookies_to_context() # 给上下文对象添加cookies
 
         self.page = await self.context.new_page() # 在这里执行其他操作，例如打开页面、截图等
@@ -363,14 +365,20 @@ class ImplementationClass(InterfaceClass):
                     result = parse_replace(self.parse_by_replace, result)
                 if self.parse_by_regular:
                     result = parse_regular(self.parse_by_regular, result)
-            
-            return result
+                    
+            return {
+                "code":200,
+                "result":result
+            }
         except Exception as error:
             rendered_logger.error(f"请求出现错误,出现的错误是: {error}")
-            raise f"请求出现错误,出现的错误是: {error}"
+            return {
+                "code":500,
+                "result":error
+            }
         finally:
             if HEADLESS:
-                rendered_logger.info(f"{self.url}请求关闭了浏览器上下文")
+                rendered_logger.info(f"======{self.url}请求关闭了浏览器上下文======")
                 await self.close_context()
 
    

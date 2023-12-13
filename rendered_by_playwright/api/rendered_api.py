@@ -6,6 +6,7 @@ from rendered_by_playwright.action_by_js.implementation_class import Implementat
 from rendered_by_playwright.utils.log import rendered_logger
 from rendered_by_playwright.enum_class.browser_type_enum import BrowserTypeEnum
 from rendered_by_playwright.enum_class.return_type_enum import ReturnTypeEnum
+from rendered_by_playwright.utils.custom_error import CustomException
 from io import BytesIO
 
 class CookiesItem(BaseModel):
@@ -75,7 +76,7 @@ async def requests(data: ResquestsData):
         
         implementation_class = ImplementationClass()
         
-        result = await implementation_class.\
+        results = await implementation_class.\
             main_requests(
                             url=url, 
                             cookies=cookies,
@@ -97,7 +98,11 @@ async def requests(data: ResquestsData):
                             after_page_load_delay=after_page_load_delay,
                             parse_by_regular=parse_by_regular,
                             parse_by_replace=parse_by_replace)
-            
+        code = results["code"]
+        if code ==500:
+            raise CustomException(f"动态渲染请求失败, 失败原因是: {results['result']},请求的url是: {data.url}")
+        
+        result = results["result"]    
         rendered_logger.info(f"动态渲染请求成功,请求的url是: {data.url}")
         if return_type == ReturnTypeEnum.TEXT.value:
             return JSONResponse(
@@ -134,12 +139,12 @@ async def requests(data: ResquestsData):
                             f"{ReturnTypeEnum.JSRESPONSE.value}":result
                 })
     
-    except Exception as error:
+    except CustomException as error:
         rendered_logger.error(f"动态渲染请求出现错误, 请求的url是: {data.url}, 错误内容是{error}")
         return JSONResponse(
                 content={
                             "code": 500,
-                            "message": error
+                            "message": str(error)
                 })
         
        
