@@ -15,7 +15,7 @@ def request_test():
 
     result_json = requests.request("POST", url, json=payload, headers=headers).json()
     if result_json["code"] == 200:
-        if not result_json:
+        if result_json is None:
             print(result_json)
         handle_xhr_response_json=result_json["handle_xhr"]
         if handle_xhr_response_json is not None and len(handle_xhr_response_json) > 0:
