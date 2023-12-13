@@ -28,8 +28,13 @@ def request_test():
             print(cursor)
     
 if __name__ == "__main__":
+    import time
+    count=0
     while True:
         try:
+            count = count + 1
+            time.sleep(1)
             request_test()
+            print(f"总请求次数是{count}")
         except Exception as error:
             print(error)
