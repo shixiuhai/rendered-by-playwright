@@ -345,7 +345,7 @@ class ImplementationClass(InterfaceClass):
             
             if self.return_type == ReturnTypeEnum.HANDLEXHR.value:
                 while self.is_handle_page_xhr_text_list_sucess is False:
-                    await asyncio.sleep(0.1)
+                    await asyncio.sleep(0.15)
                 result = self.handle_page_xhr_text_list
                 if self.parse_by_replace:
                     for i in range(len(result)):
@@ -363,11 +363,13 @@ class ImplementationClass(InterfaceClass):
                     result = parse_replace(self.parse_by_replace, result)
                 if self.parse_by_regular:
                     result = parse_regular(self.parse_by_regular, result)
+            
             return result
         except Exception as error:
             rendered_logger.error(f"请求出现错误,出现的错误是: {error}")
         finally:
             if HEADLESS:
+                rendered_logger.info(f"{self.url}请求关闭了浏览器上下文")
                 await self.close_context()
 
    

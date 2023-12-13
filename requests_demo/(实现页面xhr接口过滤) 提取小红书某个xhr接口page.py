@@ -15,8 +15,10 @@ def request_test():
 
     result_json = requests.request("POST", url, json=payload, headers=headers).json()
     if result_json["code"] == 200:
+        if not result_json:
+            print(result_json)
         handle_xhr_response_json=result_json["handle_xhr"]
-        if len(handle_xhr_response_json)>0:
+        if handle_xhr_response_json is not None and len(handle_xhr_response_json) > 0:
             resp_text = handle_xhr_response_json[0]
             resp_text = resp_text.replace("true","True").replace("false","False") # 将接口json数据中的 true和false转换为python可以解释的True和False
             resp_json = eval(resp_text)
