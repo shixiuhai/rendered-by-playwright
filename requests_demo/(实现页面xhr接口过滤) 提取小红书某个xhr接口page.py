@@ -29,4 +29,7 @@ def request_test():
     
 if __name__ == "__main__":
     while True:
-        request_test()
+        try:
+            request_test()
+        except Exception as error:
+            print(error)
