@@ -367,6 +367,7 @@ class ImplementationClass(InterfaceClass):
             return result
         except Exception as error:
             rendered_logger.error(f"请求出现错误,出现的错误是: {error}")
+            raise f"请求出现错误,出现的错误是: {error}"
         finally:
             if HEADLESS:
                 rendered_logger.info(f"{self.url}请求关闭了浏览器上下文")

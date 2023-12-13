@@ -103,6 +103,7 @@ async def requests(data: ResquestsData):
             return JSONResponse(
                 content={
                             "code": 200,
+                            "message":"成功",
                             f"{ReturnTypeEnum.TEXT.value}":result
                 })
         
@@ -110,6 +111,7 @@ async def requests(data: ResquestsData):
             return JSONResponse(
                 content={
                             "code": 200,
+                            "message":"成功",
                             f"{ReturnTypeEnum.HANDLEXHR.value}":result
                 })
             
@@ -117,6 +119,7 @@ async def requests(data: ResquestsData):
             return JSONResponse(
                 content={
                             "code": 200,
+                            "message":"成功",
                             f"{ReturnTypeEnum.COOKIES.value}":result
                 })
             
@@ -127,6 +130,7 @@ async def requests(data: ResquestsData):
             return JSONResponse(
                 content={
                             "code": 200,
+                            "message":"成功",
                             f"{ReturnTypeEnum.JSRESPONSE.value}":result
                 })
     
@@ -134,7 +138,8 @@ async def requests(data: ResquestsData):
         rendered_logger.error(f"动态渲染请求出现错误, 请求的url是: {data.url}, 错误内容是{error}")
         return JSONResponse(
                 content={
-                            "code": 500
+                            "code": 500,
+                            "message": error
                 })
         
        
