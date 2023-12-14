@@ -1,6 +1,7 @@
 ## rendered-by-playwright项目开发文档
 ### api接口文档
 * https://console-docs.apipost.cn/preview/73fc7c6d53b316e0/6bf3e4ff47acf074
+### 该项目的使用demo请移步到https://github.com/shixiuhai/rendered-by-playwright-use
 ### 项目docker部署到linux
 * linux系统安装docker
 * git拉取项目 
