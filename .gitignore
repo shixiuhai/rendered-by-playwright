@@ -1,2 +1,3 @@
 rendered_by_playwright/logs
+rendered_by_playwright/logs/*.log
 **/__pycache__/*.pyc
