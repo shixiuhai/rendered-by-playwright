@@ -287,7 +287,8 @@ class ImplementationClass(InterfaceClass):
                             wait_until:str, 
                             after_page_load_delay:float,
                             parse_by_regular:str,
-                            parse_by_replace:str):
+                            parse_by_replace:str,
+                            is_return_cookies:bool):
         """_summary_
         定义一个汇总请求方法
         url:str
@@ -310,6 +311,7 @@ class ImplementationClass(InterfaceClass):
         after_page_load_delay:Optional[float] = None # 页面加载完成后延时时间
         parse_by_regular:Optional[str] = None # 正则对返回内容进行处理 传入方式 "*a|*b"
         parse_by_replace:Optional[str] = None # 通过replace对返回内容进行处理 "(a,b)|(c,d)"
+        is_return_cookies:Optional[bool] = False # 设置是否在请求接口后返回tokens
         """
         self.url = url
         self.cookies = cookies
@@ -331,6 +333,7 @@ class ImplementationClass(InterfaceClass):
         self.after_page_load_delay = after_page_load_delay
         self.parse_by_regular = parse_by_regular
         self.parse_by_replace = parse_by_replace
+        self.is_return_cookies = is_return_cookies
         try:
             await self.create_browser_context_page() # 创建一个 浏览器对象, 上下文本对象, 页面对象， 实现反扒配置，初始化窗口大小
             await self.block_context_image() # 屏蔽上下文图片加载
@@ -370,11 +373,21 @@ class ImplementationClass(InterfaceClass):
                     result = parse_replace(self.parse_by_replace, result)
                 if self.parse_by_regular:
                     result = parse_regular(self.parse_by_regular, result)
-                    
-            return {
-                "code":200,
-                "result":result
-            }
+            
+            # 判断是否返回cookies
+            if self.is_return_cookies:
+                cookies = await self.get_page_cookies()
+                return {
+                    "code": 200,
+                    "result": result,
+                    "cookies": cookies
+                }
+            else:
+                return {
+                    "code": 200,
+                    "result": result
+                }
+            
         except Exception as error:
             rendered_logger.error(f"请求出现错误,出现的错误是: {error}")
             return {
