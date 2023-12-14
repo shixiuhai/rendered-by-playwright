@@ -36,6 +36,7 @@ class InterfaceClass(metaclass=ABCMeta):
         self.execut_js_response_after_page = ""
         self.parse_by_regular = None
         self.parse_by_replace = None
+        self.is_return_cookies = False
     
     @abstractclassmethod
     async def create_browser_context_page(self):

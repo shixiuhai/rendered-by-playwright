@@ -41,7 +41,7 @@ class ResquestsData(BaseModel):
     after_page_load_delay:Optional[float] = None # 页面加载完成后延时时间
     parse_by_regular:Optional[str] = None # 正则对返回内容进行处理 传入方式 "*a|*b"
     parse_by_replace:Optional[str] = None # 通过replace对返回内容进行处理 "(a,b)|(c,d)"
-    
+    is_return_cookies:Optional[bool] = False # 设置是否在请求接口后返回tokens
     
 app = FastAPI()
 # 创建一个路由，接受 POST 请求
@@ -73,6 +73,7 @@ async def requests(data: ResquestsData):
         after_page_load_delay = data.after_page_load_delay
         parse_by_regular = data.parse_by_regular
         parse_by_replace = data.parse_by_replace
+        is_return_cookies = data.is_return_cookies
         
         implementation_class = ImplementationClass()
         
@@ -97,62 +98,50 @@ async def requests(data: ResquestsData):
                             wait_until=wait_until,
                             after_page_load_delay=after_page_load_delay,
                             parse_by_regular=parse_by_regular,
-                            parse_by_replace=parse_by_replace)
+                            parse_by_replace=parse_by_replace,
+                            is_return_cookies=is_return_cookies)
+        
         code = results["code"]
         if code ==500:
             raise CustomException(f"动态渲染请求失败, 失败原因是: {results['result']},请求的url是: {data.url}")
-        
-        result = results["result"]    
         rendered_logger.info(f"动态渲染请求成功,请求的url是: {data.url}")
+        content = {} # 定义一个数据返回字典
+        if is_return_cookies:
+            content["cookies"] = results["cookies"]
+        
         if return_type == ReturnTypeEnum.TEXT.value:
-            return JSONResponse(
-                content={
-                            "code": 200,
-                            "message":"成功",
-                            f"{ReturnTypeEnum.TEXT.value}":result
-                })
+            content["code"] = 200
+            content["message"] = "成功"
+            content[f"{ReturnTypeEnum.TEXT.value}"] = results["result"]   
+            return JSONResponse(content)
         
         if return_type == ReturnTypeEnum.HANDLEXHR.value:
-            return JSONResponse(
-                content={
-                            "code": 200,
-                            "message":"成功",
-                            f"{ReturnTypeEnum.HANDLEXHR.value}":result
-                })
+            content["code"] = 200
+            content["message"] = "成功"
+            content[f"{ReturnTypeEnum.HANDLEXHR.value}"] = results["result"]   
+            return JSONResponse(content)
             
         if return_type == ReturnTypeEnum.COOKIES.value:
-            return JSONResponse(
-                content={
-                            "code": 200,
-                            "message":"成功",
-                            f"{ReturnTypeEnum.COOKIES.value}":result
-                })
+            content["code"] = 200
+            content["message"] = "成功"
+            content[f"{ReturnTypeEnum.COOKIES.value}"] = results["result"]   
+            return JSONResponse(content)
             
         if return_type == ReturnTypeEnum.SCREENSHOT.value:
-            return StreamingResponse(BytesIO(result), media_type="image/png")
+            return StreamingResponse(BytesIO(results["result"]), media_type="image/png")
         
         if return_type == ReturnTypeEnum.JSRESPONSE.value:
-            return JSONResponse(
-                content={
-                            "code": 200,
-                            "message":"成功",
-                            f"{ReturnTypeEnum.JSRESPONSE.value}":result
-                })
+            content["code"] = 200
+            content["message"] = "成功"
+            content[f"{ReturnTypeEnum.JSRESPONSE.value}"] = results["result"]   
+            return JSONResponse(content)
     
     except CustomException as error:
         rendered_logger.error(f"动态渲染请求出现错误, 请求的url是: {data.url}, 错误内容是{error}")
-        return JSONResponse(
-                content={
-                            "code": 500,
-                            "message": str(error)
-                })
+        content["code"] = 500
+        content["message"] = str(error)
+        return JSONResponse(content)
         
        
-        
-   
-# if __name__ == "__main__":
-#     pass
-#     # rendered_logger.info("你好") # 日志打印测试
-#     uvicorn.run(app, host="127.0.0.1", port=9001)
-
+    
 
