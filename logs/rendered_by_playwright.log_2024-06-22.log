@@ -1,0 +1,6 @@
+2024-06-22 15:45:00,728 - main.py -> <module> - line:12 - INFO: 渲染框架启动
+2024-06-22 15:45:40,468 - create_browser.py -> create - line:15 - INFO: chromium浏览器不存在,创建了chromium浏览器对象
+2024-06-22 15:45:41,837 - create_browser.py -> create - line:22 - INFO: firefox浏览器不存在,创建了firefox浏览器对象
+2024-06-22 15:45:42,687 - create_browser.py -> create - line:29 - INFO: webkit浏览器不存在,创建了webkit浏览器对象
+2024-06-22 15:45:56,594 - implementation_class.py -> main_requests - line:389 - ERROR: 请求出现错误,出现的错误是: Browser.new_context: Browser needs to be launched with the global proxy. If all contexts override the proxy, global proxy will be never used and can be any string, for example "launch({ proxy: { server: 'http://per-context' } })"
+2024-06-22 15:45:56,596 - implementation_class.py -> main_requests - line:396 - INFO: ======https://cwcwclothing.com/collections/grace-mila请求关闭了浏览器上下文======
