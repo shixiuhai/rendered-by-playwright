@@ -137,6 +137,7 @@ async def requests(data: ResquestsData):
             return JSONResponse(content)
     
     except CustomException as error:
+        content = {}
         rendered_logger.error(f"动态渲染请求出现错误, 请求的url是: {data.url}, 错误内容是{error}")
         content["code"] = 500
         content["message"] = str(error)
