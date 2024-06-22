@@ -255,14 +255,18 @@ class ImplementationClass(InterfaceClass):
     
     async def close_context(self)->None:
         """_summary_
-        关闭context对象
-        Args:
-            context (object): _description_
-        Returns:
-            None: _description_
+            关闭context对象
+            Args:
+                context (object): _description_
+            Returns:
+                None: _description_
         """
-        await self.context.close() # 关闭浏览器对象 
-    
+        if self.context:
+            await self.context.close()
+            rendered_logger.info(f"成功关闭浏览器上下文: {self.url}")
+        else:
+            rendered_logger.warning("上下文对象不存在或已经关闭")
+        
         
     async def main_requests(self, 
                             url:str, 
