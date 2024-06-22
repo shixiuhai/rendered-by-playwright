@@ -7,12 +7,9 @@ import platform
 import asyncio
 import re
 from rendered_by_playwright.action_by_js.create_browser import Browser
-from rendered_by_playwright.settings import HEADLESS
+from rendered_by_playwright.settings import CLOSED_WINDOWS
 from rendered_by_playwright.utils.parse_rule import parse_regular, parse_replace
 from rendered_by_playwright.utils.custom_error import CustomException
-os_name = platform.system()
-if os_name == "Windows":
-    HEADLESS = False
 
 class ImplementationClass(InterfaceClass):
     """_summary_
@@ -395,7 +392,7 @@ class ImplementationClass(InterfaceClass):
                 "result":error
             }
         finally:
-            if HEADLESS:
+            if CLOSED_WINDOWS:
                 rendered_logger.info(f"======{self.url}请求关闭了浏览器上下文======")
                 await self.close_context()
 
