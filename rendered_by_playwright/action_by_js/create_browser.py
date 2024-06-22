@@ -2,9 +2,9 @@ from playwright.async_api import async_playwright
 from rendered_by_playwright.settings import HEADLESS
 import platform
 from rendered_by_playwright.utils.log import rendered_logger
-os_name = platform.system()
-if os_name == "Windows":
-    HEADLESS = False
+# os_name = platform.system()
+# if os_name == "Windows":
+#     HEADLESS = False
 class Browser:
     chromium = None
     firefox = None
@@ -31,7 +31,6 @@ class Browser:
                 Browser.webkit = await self.create_webkit_browser()
                 rendered_logger.info("webkit浏览器被销毁,创建了新的webkit浏览器对象")
                 
-        
     async def create_chromium_browser(self):
         p = await async_playwright().start()  # 初始化 Playwright
         browser_options = {
