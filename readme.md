@@ -1,4 +1,6 @@
 ## rendered-by-playwright项目开发文档
+### ！！已经有人做了继承
+https://github.com/scrapy-plugins/scrapy-playwright
 ### api接口文档
 * https://console-docs.apipost.cn/preview/73fc7c6d53b316e0/6bf3e4ff47acf074
 ### 该项目集成到scrapy分布式爬取脚手架
